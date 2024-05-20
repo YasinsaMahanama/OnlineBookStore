@@ -33,24 +33,25 @@
             comboBox1 = new ComboBox();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
-            textBox1 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
             pictureBox2 = new PictureBox();
+            button2 = new Button();
+            button1 = new Button();
+            textBox1 = new TextBox();
             panel3 = new Panel();
-            button3 = new Button();
-            button11 = new Button();
-            button9 = new Button();
-            button4 = new Button();
-            button5 = new Button();
             button6 = new Button();
+            button5 = new Button();
+            button4 = new Button();
+            button9 = new Button();
+            button11 = new Button();
+            button3 = new Button();
             pictureBox3 = new PictureBox();
             panel4 = new Panel();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
             label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            panel5 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -100,26 +101,15 @@
             panel2.Size = new Size(1196, 86);
             panel2.TabIndex = 3;
             // 
-            // textBox1
+            // pictureBox2
             // 
-            textBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(319, 23);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(461, 34);
-            textBox1.TabIndex = 3;
-            textBox1.Text = "Search For Books Title or Author";
-            textBox1.TextAlign = HorizontalAlignment.Center;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.White;
-            button1.Location = new Point(786, 23);
-            button1.Name = "button1";
-            button1.Size = new Size(65, 34);
-            button1.TabIndex = 4;
-            button1.Text = "search";
-            button1.UseVisualStyleBackColor = false;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(895, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(104, 80);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 7;
+            pictureBox2.TabStop = false;
             // 
             // button2
             // 
@@ -131,15 +121,26 @@
             button2.Text = "Login / Register";
             button2.UseVisualStyleBackColor = false;
             // 
-            // pictureBox2
+            // button1
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(895, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(104, 80);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 7;
-            pictureBox2.TabStop = false;
+            button1.BackColor = Color.White;
+            button1.Location = new Point(786, 23);
+            button1.Name = "button1";
+            button1.Size = new Size(65, 34);
+            button1.TabIndex = 4;
+            button1.Text = "search";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(319, 23);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(461, 34);
+            textBox1.TabIndex = 3;
+            textBox1.Text = "Search For Books Title or Author";
+            textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // panel3
             // 
@@ -155,53 +156,17 @@
             panel3.Size = new Size(1280, 50);
             panel3.TabIndex = 4;
             // 
-            // button3
+            // button6
             // 
-            button3.BackColor = Color.Teal;
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(45, 3);
-            button3.Name = "button3";
-            button3.Size = new Size(150, 44);
-            button3.TabIndex = 0;
-            button3.Text = "SALE";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            button11.BackColor = Color.Teal;
-            button11.FlatStyle = FlatStyle.Popup;
-            button11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button11.Location = new Point(263, 3);
-            button11.Name = "button11";
-            button11.Size = new Size(141, 44);
-            button11.TabIndex = 8;
-            button11.Text = "NEW BOOKS";
-            button11.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            button9.BackColor = Color.Teal;
-            button9.FlatStyle = FlatStyle.Popup;
-            button9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button9.Location = new Point(473, 3);
-            button9.Name = "button9";
-            button9.Size = new Size(141, 44);
-            button9.TabIndex = 9;
-            button9.Text = "IN STOCK";
-            button9.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.Teal;
-            button4.FlatStyle = FlatStyle.Popup;
-            button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(684, 3);
-            button4.Name = "button4";
-            button4.Size = new Size(141, 44);
-            button4.TabIndex = 10;
-            button4.Text = "USERS";
-            button4.UseVisualStyleBackColor = false;
+            button6.BackColor = Color.Teal;
+            button6.FlatStyle = FlatStyle.Popup;
+            button6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.Location = new Point(1100, 3);
+            button6.Name = "button6";
+            button6.Size = new Size(141, 44);
+            button6.TabIndex = 12;
+            button6.Text = "CONTACT";
+            button6.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
@@ -215,24 +180,60 @@
             button5.Text = "ABOUT";
             button5.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // button4
             // 
-            button6.BackColor = Color.Teal;
-            button6.FlatStyle = FlatStyle.Popup;
-            button6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.Location = new Point(1100, 3);
-            button6.Name = "button6";
-            button6.Size = new Size(141, 44);
-            button6.TabIndex = 12;
-            button6.Text = "CONTACT";
-            button6.UseVisualStyleBackColor = false;
+            button4.BackColor = Color.Teal;
+            button4.FlatStyle = FlatStyle.Popup;
+            button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.Location = new Point(684, 3);
+            button4.Name = "button4";
+            button4.Size = new Size(141, 44);
+            button4.TabIndex = 10;
+            button4.Text = "USERS";
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            button9.BackColor = Color.Teal;
+            button9.FlatStyle = FlatStyle.Popup;
+            button9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button9.Location = new Point(473, 3);
+            button9.Name = "button9";
+            button9.Size = new Size(141, 44);
+            button9.TabIndex = 9;
+            button9.Text = "IN STOCK";
+            button9.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            button11.BackColor = Color.Teal;
+            button11.FlatStyle = FlatStyle.Popup;
+            button11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button11.Location = new Point(263, 3);
+            button11.Name = "button11";
+            button11.Size = new Size(141, 44);
+            button11.TabIndex = 8;
+            button11.Text = "NEW BOOKS";
+            button11.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.Teal;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Location = new Point(45, 3);
+            button3.Name = "button3";
+            button3.Size = new Size(150, 44);
+            button3.TabIndex = 0;
+            button3.Text = "SALE";
+            button3.UseVisualStyleBackColor = false;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(9, 237);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(605, 471);
+            pictureBox3.Size = new Size(605, 451);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
@@ -247,28 +248,28 @@
             panel4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             panel4.Location = new Point(620, 237);
             panel4.Name = "panel4";
-            panel4.Size = new Size(648, 471);
+            panel4.Size = new Size(648, 451);
             panel4.TabIndex = 6;
             // 
-            // label1
+            // label5
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 48F, FontStyle.Bold);
-            label1.Location = new Point(14, 46);
-            label1.Name = "label1";
-            label1.Size = new Size(631, 106);
-            label1.TabIndex = 1;
-            label1.Text = "NEW ARRIVALS";
+            label5.AutoSize = true;
+            label5.ForeColor = SystemColors.ControlDarkDark;
+            label5.Location = new Point(182, 317);
+            label5.Name = "label5";
+            label5.Size = new Size(255, 31);
+            label5.TabIndex = 5;
+            label5.Text = "access to new releases.";
             // 
-            // label2
+            // label4
             // 
-            label2.AutoSize = true;
-            label2.ForeColor = SystemColors.ControlDarkDark;
-            label2.Location = new Point(20, 224);
-            label2.Name = "label2";
-            label2.Size = new Size(612, 31);
-            label2.TabIndex = 2;
-            label2.Text = "Join our community of book lovers and enjoy exclusive ";
+            label4.AutoSize = true;
+            label4.ForeColor = SystemColors.ControlDarkDark;
+            label4.Location = new Point(70, 286);
+            label4.Name = "label4";
+            label4.Size = new Size(512, 31);
+            label4.TabIndex = 4;
+            label4.Text = "recommendations, special discounts, and early";
             // 
             // label3
             // 
@@ -281,25 +282,33 @@
             label3.Text = "member benefits, including personalized";
             label3.Click += label3_Click;
             // 
-            // label4
+            // label2
             // 
-            label4.AutoSize = true;
-            label4.ForeColor = SystemColors.ControlDarkDark;
-            label4.Location = new Point(70, 286);
-            label4.Name = "label4";
-            label4.Size = new Size(512, 31);
-            label4.TabIndex = 4;
-            label4.Text = "recommendations, special discounts, and early";
+            label2.AutoSize = true;
+            label2.ForeColor = SystemColors.ControlDarkDark;
+            label2.Location = new Point(20, 224);
+            label2.Name = "label2";
+            label2.Size = new Size(612, 31);
+            label2.TabIndex = 2;
+            label2.Text = "Join our community of book lovers and enjoy exclusive ";
             // 
-            // label5
+            // label1
             // 
-            label5.AutoSize = true;
-            label5.ForeColor = SystemColors.ControlDarkDark;
-            label5.Location = new Point(182, 317);
-            label5.Name = "label5";
-            label5.Size = new Size(255, 31);
-            label5.TabIndex = 5;
-            label5.Text = "access to new releases.";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 48F, FontStyle.Bold);
+            label1.Location = new Point(14, 46);
+            label1.Name = "label1";
+            label1.Size = new Size(631, 106);
+            label1.TabIndex = 1;
+            label1.Text = "NEW ARRIVALS";
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.LightSkyBlue;
+            panel5.Location = new Point(0, 694);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(1280, 29);
+            panel5.TabIndex = 7;
             // 
             // Home
             // 
@@ -307,6 +316,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1280, 720);
+            Controls.Add(panel5);
             Controls.Add(panel4);
             Controls.Add(pictureBox3);
             Controls.Add(panel3);
@@ -351,5 +361,6 @@
         private Label label3;
         private Label label2;
         private Label label5;
+        private Panel panel5;
     }
 }
