@@ -218,7 +218,7 @@
             BookBtn.Name = "BookBtn";
             BookBtn.Size = new Size(141, 44);
             BookBtn.TabIndex = 8;
-            BookBtn.Text = "NEW BOOKS";
+            BookBtn.Text = "BOOKS";
             BookBtn.UseVisualStyleBackColor = false;
             BookBtn.Click += BookBtn_Click;
             // 
