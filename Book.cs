@@ -16,5 +16,10 @@ namespace OnlineBookShop
         {
             InitializeComponent();
         }
+
+        private void Deletebtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
