@@ -275,6 +275,7 @@
             Deletebtn.TabIndex = 26;
             Deletebtn.Text = "Delete";
             Deletebtn.UseVisualStyleBackColor = false;
+            Deletebtn.Click += Deletebtn_Click;
             // 
             // ResetBtn
             // 
