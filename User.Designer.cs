@@ -38,6 +38,7 @@
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
+            panel2 = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -155,12 +156,23 @@
             button2.Text = "BOOKS";
             button2.UseVisualStyleBackColor = false;
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.White;
+            panel2.Font = new Font("Garamond", 16.2F, FontStyle.Bold);
+            panel2.ForeColor = Color.White;
+            panel2.Location = new Point(320, 12);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(948, 696);
+            panel2.TabIndex = 4;
+            // 
             // User
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSkyBlue;
             ClientSize = new Size(1280, 720);
+            Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "User";
@@ -183,5 +195,6 @@
         private Button button4;
         private Button button3;
         private Button button2;
+        private Panel panel2;
     }
 }
