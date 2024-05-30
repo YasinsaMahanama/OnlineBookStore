@@ -16,5 +16,77 @@ namespace OnlineBookShop
         {
             InitializeComponent();
         }
+
+        private void BookBtnS_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the Book form
+            Book bookForm = new Book();
+
+            // Show the Book form
+            bookForm.Show();
+
+            // Hide the current Sale form
+            this.Hide();
+        }
+
+        private void UserBtnS_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the User form
+            User userForm = new User();
+
+            // Show the User form
+            userForm.Show();
+
+            // Hide the current Sale form
+            this.Hide();
+        }
+
+        private void InStockBtnS_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the In Stock form
+            InStock inStockForm = new InStock();
+
+            // Show the In Stock form
+            inStockForm.Show();
+
+            // Hide the current Sale form
+            this.Hide();
+        }
+
+        private void SaleBtnS_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the Sale form
+            Sale saleForm = new Sale();
+
+            // Show the Sale form
+            saleForm.Show();
+
+            // Hide the current Sale form
+            this.Hide();
+        }
+
+        private void AboutBtnS_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the About form
+            About aboutForm = new About();
+
+            // Show the About form
+            aboutForm.Show();
+
+            // Hide the current Sale form
+            this.Hide();
+        }
+
+        private void ContactBtnS_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the Contact form
+            Contact contactForm = new Contact();
+
+            // Show the About form
+            contactForm.Show();
+
+            // Hide the current Sale form
+            this.Hide();
+        }
     }
 }
