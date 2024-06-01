@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
             panel2 = new Panel();
             panel1 = new Panel();
-            InStockBtnS = new Button();
-            AboutBtnS = new Button();
+            InStockBtnA = new Button();
+            AboutBtnA = new Button();
             pictureBox1 = new PictureBox();
             label9 = new Label();
-            ContactBtnS = new Button();
-            SaleBtnS = new Button();
-            UserBtnS = new Button();
-            BookBtnS = new Button();
+            ContactBtnA = new Button();
+            SaleBtnA = new Button();
+            UserBtnA = new Button();
+            BookBtnA = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -56,43 +56,45 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 0, 64);
-            panel1.Controls.Add(InStockBtnS);
-            panel1.Controls.Add(AboutBtnS);
+            panel1.Controls.Add(InStockBtnA);
+            panel1.Controls.Add(AboutBtnA);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label9);
-            panel1.Controls.Add(ContactBtnS);
-            panel1.Controls.Add(SaleBtnS);
-            panel1.Controls.Add(UserBtnS);
-            panel1.Controls.Add(BookBtnS);
+            panel1.Controls.Add(ContactBtnA);
+            panel1.Controls.Add(SaleBtnA);
+            panel1.Controls.Add(UserBtnA);
+            panel1.Controls.Add(BookBtnA);
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(314, 696);
             panel1.TabIndex = 8;
             // 
-            // InStockBtnS
+            // InStockBtnA
             // 
-            InStockBtnS.BackColor = SystemColors.ControlDarkDark;
-            InStockBtnS.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            InStockBtnS.ForeColor = Color.Black;
-            InStockBtnS.Location = new Point(59, 329);
-            InStockBtnS.Name = "InStockBtnS";
-            InStockBtnS.Size = new Size(193, 45);
-            InStockBtnS.TabIndex = 20;
-            InStockBtnS.Text = "IN STOCK";
-            InStockBtnS.UseVisualStyleBackColor = false;
+            InStockBtnA.BackColor = SystemColors.ControlDarkDark;
+            InStockBtnA.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            InStockBtnA.ForeColor = Color.Black;
+            InStockBtnA.Location = new Point(59, 329);
+            InStockBtnA.Name = "InStockBtnA";
+            InStockBtnA.Size = new Size(193, 45);
+            InStockBtnA.TabIndex = 20;
+            InStockBtnA.Text = "IN STOCK";
+            InStockBtnA.UseVisualStyleBackColor = false;
+            InStockBtnA.Click += InStockBtnA_Click;
             // 
-            // AboutBtnS
+            // AboutBtnA
             // 
-            AboutBtnS.BackColor = Color.Teal;
-            AboutBtnS.FlatStyle = FlatStyle.Popup;
-            AboutBtnS.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            AboutBtnS.ForeColor = Color.Black;
-            AboutBtnS.Location = new Point(59, 498);
-            AboutBtnS.Name = "AboutBtnS";
-            AboutBtnS.Size = new Size(193, 45);
-            AboutBtnS.TabIndex = 19;
-            AboutBtnS.Text = "ABOUT";
-            AboutBtnS.UseVisualStyleBackColor = false;
+            AboutBtnA.BackColor = Color.Teal;
+            AboutBtnA.FlatStyle = FlatStyle.Popup;
+            AboutBtnA.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            AboutBtnA.ForeColor = Color.Black;
+            AboutBtnA.Location = new Point(59, 498);
+            AboutBtnA.Name = "AboutBtnA";
+            AboutBtnA.Size = new Size(193, 45);
+            AboutBtnA.TabIndex = 19;
+            AboutBtnA.Text = "ABOUT";
+            AboutBtnA.UseVisualStyleBackColor = false;
+            AboutBtnA.Click += AboutBtnA_Click;
             // 
             // pictureBox1
             // 
@@ -118,53 +120,57 @@
             label9.Text = "Book Shop";
             label9.TextAlign = ContentAlignment.TopCenter;
             // 
-            // ContactBtnS
+            // ContactBtnA
             // 
-            ContactBtnS.BackColor = SystemColors.ControlDarkDark;
-            ContactBtnS.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ContactBtnS.ForeColor = Color.Black;
-            ContactBtnS.Location = new Point(59, 582);
-            ContactBtnS.Name = "ContactBtnS";
-            ContactBtnS.Size = new Size(193, 45);
-            ContactBtnS.TabIndex = 17;
-            ContactBtnS.Text = "CONTACT";
-            ContactBtnS.UseVisualStyleBackColor = false;
+            ContactBtnA.BackColor = SystemColors.ControlDarkDark;
+            ContactBtnA.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ContactBtnA.ForeColor = Color.Black;
+            ContactBtnA.Location = new Point(59, 582);
+            ContactBtnA.Name = "ContactBtnA";
+            ContactBtnA.Size = new Size(193, 45);
+            ContactBtnA.TabIndex = 17;
+            ContactBtnA.Text = "CONTACT";
+            ContactBtnA.UseVisualStyleBackColor = false;
+            ContactBtnA.Click += ContactBtnA_Click;
             // 
-            // SaleBtnS
+            // SaleBtnA
             // 
-            SaleBtnS.BackColor = SystemColors.ControlDarkDark;
-            SaleBtnS.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SaleBtnS.ForeColor = Color.Black;
-            SaleBtnS.Location = new Point(59, 413);
-            SaleBtnS.Name = "SaleBtnS";
-            SaleBtnS.Size = new Size(193, 45);
-            SaleBtnS.TabIndex = 16;
-            SaleBtnS.Text = "SALE";
-            SaleBtnS.UseVisualStyleBackColor = false;
+            SaleBtnA.BackColor = SystemColors.ControlDarkDark;
+            SaleBtnA.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            SaleBtnA.ForeColor = Color.Black;
+            SaleBtnA.Location = new Point(59, 413);
+            SaleBtnA.Name = "SaleBtnA";
+            SaleBtnA.Size = new Size(193, 45);
+            SaleBtnA.TabIndex = 16;
+            SaleBtnA.Text = "SALE";
+            SaleBtnA.UseVisualStyleBackColor = false;
+            SaleBtnA.Click += SaleBtnA_Click;
             // 
-            // UserBtnS
+            // UserBtnA
             // 
-            UserBtnS.BackColor = SystemColors.ControlDarkDark;
-            UserBtnS.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            UserBtnS.ForeColor = Color.Black;
-            UserBtnS.Location = new Point(59, 246);
-            UserBtnS.Name = "UserBtnS";
-            UserBtnS.Size = new Size(193, 45);
-            UserBtnS.TabIndex = 15;
-            UserBtnS.Text = "USERS";
-            UserBtnS.UseVisualStyleBackColor = false;
+            UserBtnA.BackColor = SystemColors.ControlDarkDark;
+            UserBtnA.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            UserBtnA.ForeColor = Color.Black;
+            UserBtnA.Location = new Point(59, 246);
+            UserBtnA.Name = "UserBtnA";
+            UserBtnA.Size = new Size(193, 45);
+            UserBtnA.TabIndex = 15;
+            UserBtnA.Text = "USERS";
+            UserBtnA.UseVisualStyleBackColor = false;
+            UserBtnA.Click += UserBtnA_Click;
             // 
-            // BookBtnS
+            // BookBtnA
             // 
-            BookBtnS.BackColor = SystemColors.ControlDarkDark;
-            BookBtnS.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BookBtnS.ForeColor = Color.Black;
-            BookBtnS.Location = new Point(59, 163);
-            BookBtnS.Name = "BookBtnS";
-            BookBtnS.Size = new Size(193, 45);
-            BookBtnS.TabIndex = 14;
-            BookBtnS.Text = "BOOKS";
-            BookBtnS.UseVisualStyleBackColor = false;
+            BookBtnA.BackColor = SystemColors.ControlDarkDark;
+            BookBtnA.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BookBtnA.ForeColor = Color.Black;
+            BookBtnA.Location = new Point(59, 163);
+            BookBtnA.Name = "BookBtnA";
+            BookBtnA.Size = new Size(193, 45);
+            BookBtnA.TabIndex = 14;
+            BookBtnA.Text = "BOOKS";
+            BookBtnA.UseVisualStyleBackColor = false;
+            BookBtnA.Click += BookBtnA_Click;
             // 
             // About
             // 
@@ -188,13 +194,13 @@
 
         private Panel panel2;
         private Panel panel1;
-        private Button InStockBtnS;
-        private Button AboutBtnS;
+        private Button InStockBtnA;
+        private Button AboutBtnA;
         private PictureBox pictureBox1;
         private Label label9;
-        private Button ContactBtnS;
-        private Button SaleBtnS;
-        private Button UserBtnS;
-        private Button BookBtnS;
+        private Button ContactBtnA;
+        private Button SaleBtnA;
+        private Button UserBtnA;
+        private Button BookBtnA;
     }
 }
