@@ -59,6 +59,7 @@
             BTitleTb = new TextBox();
             label3 = new Label();
             label1 = new Label();
+            HomeBtnB = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -68,6 +69,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 0, 64);
+            panel1.Controls.Add(HomeBtnB);
             panel1.Controls.Add(InStockBtnB);
             panel1.Controls.Add(AboutBtnB);
             panel1.Controls.Add(pictureBox1);
@@ -86,7 +88,7 @@
             InStockBtnB.BackColor = SystemColors.ControlDarkDark;
             InStockBtnB.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             InStockBtnB.ForeColor = Color.Black;
-            InStockBtnB.Location = new Point(59, 329);
+            InStockBtnB.Location = new Point(59, 385);
             InStockBtnB.Name = "InStockBtnB";
             InStockBtnB.Size = new Size(193, 45);
             InStockBtnB.TabIndex = 20;
@@ -99,7 +101,7 @@
             AboutBtnB.BackColor = SystemColors.ControlDarkDark;
             AboutBtnB.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             AboutBtnB.ForeColor = Color.Black;
-            AboutBtnB.Location = new Point(59, 498);
+            AboutBtnB.Location = new Point(59, 546);
             AboutBtnB.Name = "AboutBtnB";
             AboutBtnB.Size = new Size(193, 45);
             AboutBtnB.TabIndex = 19;
@@ -136,7 +138,7 @@
             ContactBtnB.BackColor = SystemColors.ControlDarkDark;
             ContactBtnB.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ContactBtnB.ForeColor = Color.Black;
-            ContactBtnB.Location = new Point(59, 582);
+            ContactBtnB.Location = new Point(59, 622);
             ContactBtnB.Name = "ContactBtnB";
             ContactBtnB.Size = new Size(193, 45);
             ContactBtnB.TabIndex = 17;
@@ -149,7 +151,7 @@
             SaleBtnB.BackColor = SystemColors.ControlDarkDark;
             SaleBtnB.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SaleBtnB.ForeColor = Color.Black;
-            SaleBtnB.Location = new Point(59, 413);
+            SaleBtnB.Location = new Point(59, 468);
             SaleBtnB.Name = "SaleBtnB";
             SaleBtnB.Size = new Size(193, 45);
             SaleBtnB.TabIndex = 16;
@@ -162,7 +164,7 @@
             UserBtnB.BackColor = SystemColors.ControlDarkDark;
             UserBtnB.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             UserBtnB.ForeColor = Color.Black;
-            UserBtnB.Location = new Point(59, 246);
+            UserBtnB.Location = new Point(59, 303);
             UserBtnB.Name = "UserBtnB";
             UserBtnB.Size = new Size(193, 45);
             UserBtnB.TabIndex = 15;
@@ -176,7 +178,7 @@
             BookBtnB.FlatStyle = FlatStyle.Popup;
             BookBtnB.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BookBtnB.ForeColor = Color.Black;
-            BookBtnB.Location = new Point(59, 163);
+            BookBtnB.Location = new Point(59, 219);
             BookBtnB.Name = "BookBtnB";
             BookBtnB.Size = new Size(193, 45);
             BookBtnB.TabIndex = 14;
@@ -431,6 +433,18 @@
             label1.Text = "Book Title ";
             label1.TextAlign = ContentAlignment.TopCenter;
             // 
+            // HomeBtnB
+            // 
+            HomeBtnB.BackColor = SystemColors.ControlDarkDark;
+            HomeBtnB.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            HomeBtnB.ForeColor = Color.Black;
+            HomeBtnB.Location = new Point(59, 136);
+            HomeBtnB.Name = "HomeBtnB";
+            HomeBtnB.Size = new Size(193, 45);
+            HomeBtnB.TabIndex = 21;
+            HomeBtnB.Text = "HOME";
+            HomeBtnB.UseVisualStyleBackColor = false;
+            // 
             // Book
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -484,5 +498,6 @@
         private Label label3;
         private Label label1;
         private Label label4;
+        private Button HomeBtnB;
     }
 }
