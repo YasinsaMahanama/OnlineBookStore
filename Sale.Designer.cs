@@ -39,6 +39,7 @@
             SaleBtnS = new Button();
             UserBtnS = new Button();
             BookBtnS = new Button();
+            HomeBtnS = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -56,6 +57,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 0, 64);
+            panel1.Controls.Add(HomeBtnS);
             panel1.Controls.Add(InStockBtnS);
             panel1.Controls.Add(AboutBtnS);
             panel1.Controls.Add(pictureBox1);
@@ -74,7 +76,7 @@
             InStockBtnS.BackColor = SystemColors.ControlDarkDark;
             InStockBtnS.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             InStockBtnS.ForeColor = Color.Black;
-            InStockBtnS.Location = new Point(59, 329);
+            InStockBtnS.Location = new Point(59, 377);
             InStockBtnS.Name = "InStockBtnS";
             InStockBtnS.Size = new Size(193, 45);
             InStockBtnS.TabIndex = 20;
@@ -87,7 +89,7 @@
             AboutBtnS.BackColor = SystemColors.ControlDarkDark;
             AboutBtnS.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             AboutBtnS.ForeColor = Color.Black;
-            AboutBtnS.Location = new Point(59, 498);
+            AboutBtnS.Location = new Point(59, 539);
             AboutBtnS.Name = "AboutBtnS";
             AboutBtnS.Size = new Size(193, 45);
             AboutBtnS.TabIndex = 19;
@@ -124,7 +126,7 @@
             ContactBtnS.BackColor = SystemColors.ControlDarkDark;
             ContactBtnS.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ContactBtnS.ForeColor = Color.Black;
-            ContactBtnS.Location = new Point(59, 582);
+            ContactBtnS.Location = new Point(59, 621);
             ContactBtnS.Name = "ContactBtnS";
             ContactBtnS.Size = new Size(193, 45);
             ContactBtnS.TabIndex = 17;
@@ -138,7 +140,7 @@
             SaleBtnS.FlatStyle = FlatStyle.Popup;
             SaleBtnS.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SaleBtnS.ForeColor = Color.Black;
-            SaleBtnS.Location = new Point(59, 413);
+            SaleBtnS.Location = new Point(59, 457);
             SaleBtnS.Name = "SaleBtnS";
             SaleBtnS.Size = new Size(193, 45);
             SaleBtnS.TabIndex = 16;
@@ -151,7 +153,7 @@
             UserBtnS.BackColor = SystemColors.ControlDarkDark;
             UserBtnS.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             UserBtnS.ForeColor = Color.Black;
-            UserBtnS.Location = new Point(59, 246);
+            UserBtnS.Location = new Point(59, 296);
             UserBtnS.Name = "UserBtnS";
             UserBtnS.Size = new Size(193, 45);
             UserBtnS.TabIndex = 15;
@@ -164,13 +166,25 @@
             BookBtnS.BackColor = SystemColors.ControlDarkDark;
             BookBtnS.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BookBtnS.ForeColor = Color.Black;
-            BookBtnS.Location = new Point(59, 163);
+            BookBtnS.Location = new Point(59, 217);
             BookBtnS.Name = "BookBtnS";
             BookBtnS.Size = new Size(193, 45);
             BookBtnS.TabIndex = 14;
             BookBtnS.Text = "BOOKS";
             BookBtnS.UseVisualStyleBackColor = false;
             BookBtnS.Click += BookBtnS_Click;
+            // 
+            // HomeBtnS
+            // 
+            HomeBtnS.BackColor = SystemColors.ControlDarkDark;
+            HomeBtnS.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            HomeBtnS.ForeColor = Color.Black;
+            HomeBtnS.Location = new Point(59, 136);
+            HomeBtnS.Name = "HomeBtnS";
+            HomeBtnS.Size = new Size(193, 45);
+            HomeBtnS.TabIndex = 22;
+            HomeBtnS.Text = "HOME";
+            HomeBtnS.UseVisualStyleBackColor = false;
             // 
             // Sale
             // 
@@ -202,5 +216,6 @@
         private Button SaleBtnS;
         private Button UserBtnS;
         private Button BookBtnS;
+        private Button HomeBtnS;
     }
 }

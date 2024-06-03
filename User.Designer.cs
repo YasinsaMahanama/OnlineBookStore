@@ -39,6 +39,7 @@
             UserBtnU = new Button();
             BookBtnU = new Button();
             panel2 = new Panel();
+            HomeBtnU = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -46,6 +47,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 0, 64);
+            panel1.Controls.Add(HomeBtnU);
             panel1.Controls.Add(InStockBtnU);
             panel1.Controls.Add(AboutBtnU);
             panel1.Controls.Add(pictureBox1);
@@ -64,7 +66,7 @@
             InStockBtnU.BackColor = SystemColors.ControlDarkDark;
             InStockBtnU.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             InStockBtnU.ForeColor = Color.Black;
-            InStockBtnU.Location = new Point(59, 329);
+            InStockBtnU.Location = new Point(59, 376);
             InStockBtnU.Name = "InStockBtnU";
             InStockBtnU.Size = new Size(193, 45);
             InStockBtnU.TabIndex = 20;
@@ -77,7 +79,7 @@
             AboutBtnU.BackColor = SystemColors.ControlDarkDark;
             AboutBtnU.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             AboutBtnU.ForeColor = Color.Black;
-            AboutBtnU.Location = new Point(59, 498);
+            AboutBtnU.Location = new Point(59, 540);
             AboutBtnU.Name = "AboutBtnU";
             AboutBtnU.Size = new Size(193, 45);
             AboutBtnU.TabIndex = 19;
@@ -114,7 +116,7 @@
             ContactBtnU.BackColor = SystemColors.ControlDarkDark;
             ContactBtnU.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ContactBtnU.ForeColor = Color.Black;
-            ContactBtnU.Location = new Point(59, 582);
+            ContactBtnU.Location = new Point(59, 618);
             ContactBtnU.Name = "ContactBtnU";
             ContactBtnU.Size = new Size(193, 45);
             ContactBtnU.TabIndex = 17;
@@ -127,7 +129,7 @@
             SaleBtnU.BackColor = SystemColors.ControlDarkDark;
             SaleBtnU.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SaleBtnU.ForeColor = Color.Black;
-            SaleBtnU.Location = new Point(59, 413);
+            SaleBtnU.Location = new Point(59, 456);
             SaleBtnU.Name = "SaleBtnU";
             SaleBtnU.Size = new Size(193, 45);
             SaleBtnU.TabIndex = 16;
@@ -141,7 +143,7 @@
             UserBtnU.FlatStyle = FlatStyle.Popup;
             UserBtnU.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             UserBtnU.ForeColor = Color.Black;
-            UserBtnU.Location = new Point(59, 246);
+            UserBtnU.Location = new Point(59, 295);
             UserBtnU.Name = "UserBtnU";
             UserBtnU.Size = new Size(193, 45);
             UserBtnU.TabIndex = 15;
@@ -154,7 +156,7 @@
             BookBtnU.BackColor = SystemColors.ControlDarkDark;
             BookBtnU.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BookBtnU.ForeColor = Color.Black;
-            BookBtnU.Location = new Point(59, 163);
+            BookBtnU.Location = new Point(59, 214);
             BookBtnU.Name = "BookBtnU";
             BookBtnU.Size = new Size(193, 45);
             BookBtnU.TabIndex = 14;
@@ -171,6 +173,18 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(948, 696);
             panel2.TabIndex = 4;
+            // 
+            // HomeBtnU
+            // 
+            HomeBtnU.BackColor = SystemColors.ControlDarkDark;
+            HomeBtnU.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            HomeBtnU.ForeColor = Color.Black;
+            HomeBtnU.Location = new Point(59, 136);
+            HomeBtnU.Name = "HomeBtnU";
+            HomeBtnU.Size = new Size(193, 45);
+            HomeBtnU.TabIndex = 22;
+            HomeBtnU.Text = "HOME";
+            HomeBtnU.UseVisualStyleBackColor = false;
             // 
             // User
             // 
@@ -202,5 +216,6 @@
         private Button UserBtnU;
         private Button BookBtnU;
         private Panel panel2;
+        private Button HomeBtnU;
     }
 }
