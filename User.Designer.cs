@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User));
             panel1 = new Panel();
+            HomeBtnU = new Button();
             InStockBtnU = new Button();
             AboutBtnU = new Button();
             pictureBox1 = new PictureBox();
@@ -39,7 +40,6 @@
             UserBtnU = new Button();
             BookBtnU = new Button();
             panel2 = new Panel();
-            HomeBtnU = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -60,6 +60,19 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(314, 696);
             panel1.TabIndex = 3;
+            // 
+            // HomeBtnU
+            // 
+            HomeBtnU.BackColor = SystemColors.ControlDarkDark;
+            HomeBtnU.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            HomeBtnU.ForeColor = Color.Black;
+            HomeBtnU.Location = new Point(59, 136);
+            HomeBtnU.Name = "HomeBtnU";
+            HomeBtnU.Size = new Size(193, 45);
+            HomeBtnU.TabIndex = 22;
+            HomeBtnU.Text = "HOME";
+            HomeBtnU.UseVisualStyleBackColor = false;
+            HomeBtnU.Click += HomeBtnU_Click;
             // 
             // InStockBtnU
             // 
@@ -173,18 +186,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(948, 696);
             panel2.TabIndex = 4;
-            // 
-            // HomeBtnU
-            // 
-            HomeBtnU.BackColor = SystemColors.ControlDarkDark;
-            HomeBtnU.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            HomeBtnU.ForeColor = Color.Black;
-            HomeBtnU.Location = new Point(59, 136);
-            HomeBtnU.Name = "HomeBtnU";
-            HomeBtnU.Size = new Size(193, 45);
-            HomeBtnU.TabIndex = 22;
-            HomeBtnU.Text = "HOME";
-            HomeBtnU.UseVisualStyleBackColor = false;
             // 
             // User
             // 

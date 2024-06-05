@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
             panel2 = new Panel();
             panel1 = new Panel();
+            HomeBtnA = new Button();
             InStockBtnA = new Button();
             AboutBtnA = new Button();
             pictureBox1 = new PictureBox();
@@ -39,7 +40,6 @@
             SaleBtnA = new Button();
             UserBtnA = new Button();
             BookBtnA = new Button();
-            HomeBtnA = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -70,6 +70,19 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(314, 696);
             panel1.TabIndex = 8;
+            // 
+            // HomeBtnA
+            // 
+            HomeBtnA.BackColor = SystemColors.ControlDarkDark;
+            HomeBtnA.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            HomeBtnA.ForeColor = Color.Black;
+            HomeBtnA.Location = new Point(59, 136);
+            HomeBtnA.Name = "HomeBtnA";
+            HomeBtnA.Size = new Size(193, 45);
+            HomeBtnA.TabIndex = 22;
+            HomeBtnA.Text = "HOME";
+            HomeBtnA.UseVisualStyleBackColor = false;
+            HomeBtnA.Click += HomeBtnA_Click;
             // 
             // InStockBtnA
             // 
@@ -173,18 +186,6 @@
             BookBtnA.Text = "BOOKS";
             BookBtnA.UseVisualStyleBackColor = false;
             BookBtnA.Click += BookBtnA_Click;
-            // 
-            // HomeBtnA
-            // 
-            HomeBtnA.BackColor = SystemColors.ControlDarkDark;
-            HomeBtnA.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            HomeBtnA.ForeColor = Color.Black;
-            HomeBtnA.Location = new Point(59, 136);
-            HomeBtnA.Name = "HomeBtnA";
-            HomeBtnA.Size = new Size(193, 45);
-            HomeBtnA.TabIndex = 22;
-            HomeBtnA.Text = "HOME";
-            HomeBtnA.UseVisualStyleBackColor = false;
             // 
             // About
             // 
