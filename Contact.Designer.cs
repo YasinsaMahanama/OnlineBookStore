@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Contact));
             panel2 = new Panel();
             panel1 = new Panel();
+            HomeBtnC = new Button();
             InStockBtnC = new Button();
             AboutBtnC = new Button();
             pictureBox1 = new PictureBox();
@@ -39,7 +40,6 @@
             SaleBtnC = new Button();
             UserBtnC = new Button();
             BookBtnC = new Button();
-            HomeBtnC = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -70,6 +70,19 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(314, 696);
             panel1.TabIndex = 10;
+            // 
+            // HomeBtnC
+            // 
+            HomeBtnC.BackColor = SystemColors.ControlDarkDark;
+            HomeBtnC.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            HomeBtnC.ForeColor = Color.Black;
+            HomeBtnC.Location = new Point(59, 136);
+            HomeBtnC.Name = "HomeBtnC";
+            HomeBtnC.Size = new Size(193, 45);
+            HomeBtnC.TabIndex = 23;
+            HomeBtnC.Text = "HOME";
+            HomeBtnC.UseVisualStyleBackColor = false;
+            HomeBtnC.Click += HomeBtnC_Click;
             // 
             // InStockBtnC
             // 
@@ -173,18 +186,6 @@
             BookBtnC.Text = "BOOKS";
             BookBtnC.UseVisualStyleBackColor = false;
             BookBtnC.Click += BookBtnC_Click;
-            // 
-            // HomeBtnC
-            // 
-            HomeBtnC.BackColor = SystemColors.ControlDarkDark;
-            HomeBtnC.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            HomeBtnC.ForeColor = Color.Black;
-            HomeBtnC.Location = new Point(59, 136);
-            HomeBtnC.Name = "HomeBtnC";
-            HomeBtnC.Size = new Size(193, 45);
-            HomeBtnC.TabIndex = 23;
-            HomeBtnC.Text = "HOME";
-            HomeBtnC.UseVisualStyleBackColor = false;
             // 
             // Contact
             // 
