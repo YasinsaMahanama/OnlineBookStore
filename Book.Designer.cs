@@ -60,6 +60,7 @@
             BTitleTb = new TextBox();
             label3 = new Label();
             label1 = new Label();
+            button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -202,6 +203,7 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
+            panel2.Controls.Add(button1);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(Refreshbtn);
             panel2.Controls.Add(CatCbAearch);
@@ -446,6 +448,18 @@
             label1.Text = "Book Title ";
             label1.TextAlign = ContentAlignment.TopCenter;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(0, 0, 64);
+            button1.Font = new Font("Garamond", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(845, 20);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 45);
+            button1.TabIndex = 33;
+            button1.Text = "Log out";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // Book
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -500,5 +514,6 @@
         private Label label1;
         private Label label4;
         private Button HomeBtnB;
+        private Button button1;
     }
 }
