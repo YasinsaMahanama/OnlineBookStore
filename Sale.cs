@@ -100,5 +100,10 @@ namespace OnlineBookShop
             // Hide the current Sle form
             this.Hide();
         }
+
+        private void LogOutBtnS_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
