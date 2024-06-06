@@ -100,5 +100,10 @@ namespace OnlineBookShop
             // Hide the current Contact form
             this.Hide();
         }
+
+        private void LogOutBtnC_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -105,5 +105,10 @@ namespace OnlineBookShop
             // Hide the current Book form
             this.Hide();
         }
+
+        private void LogOutBtnB_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

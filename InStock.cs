@@ -100,5 +100,10 @@ namespace OnlineBookShop
             // Hide the current In Stock form
             this.Hide();
         }
+
+        private void LogOutBtnI_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

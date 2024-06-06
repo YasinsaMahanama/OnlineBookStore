@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Contact));
             panel2 = new Panel();
+            LogOutBtnC = new Button();
             panel1 = new Panel();
             HomeBtnC = new Button();
             InStockBtnC = new Button();
@@ -40,7 +41,6 @@
             SaleBtnC = new Button();
             UserBtnC = new Button();
             BookBtnC = new Button();
-            button1 = new Button();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -49,13 +49,26 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(LogOutBtnC);
             panel2.Font = new Font("Garamond", 16.2F, FontStyle.Bold);
             panel2.ForeColor = Color.White;
             panel2.Location = new Point(320, 12);
             panel2.Name = "panel2";
             panel2.Size = new Size(948, 696);
             panel2.TabIndex = 11;
+            // 
+            // LogOutBtnC
+            // 
+            LogOutBtnC.BackColor = Color.FromArgb(0, 0, 64);
+            LogOutBtnC.Font = new Font("Garamond", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LogOutBtnC.ForeColor = Color.White;
+            LogOutBtnC.Location = new Point(841, 15);
+            LogOutBtnC.Name = "LogOutBtnC";
+            LogOutBtnC.Size = new Size(94, 45);
+            LogOutBtnC.TabIndex = 34;
+            LogOutBtnC.Text = "Log out";
+            LogOutBtnC.UseVisualStyleBackColor = false;
+            LogOutBtnC.Click += LogOutBtnC_Click;
             // 
             // panel1
             // 
@@ -190,18 +203,6 @@
             BookBtnC.UseVisualStyleBackColor = false;
             BookBtnC.Click += BookBtnC_Click;
             // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(0, 0, 64);
-            button1.Font = new Font("Garamond", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(841, 15);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 45);
-            button1.TabIndex = 34;
-            button1.Text = "Log out";
-            button1.UseVisualStyleBackColor = false;
-            // 
             // Contact
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -234,6 +235,6 @@
         private Button UserBtnC;
         private Button BookBtnC;
         private Button HomeBtnC;
-        private Button button1;
+        private Button LogOutBtnC;
     }
 }
