@@ -103,7 +103,14 @@ namespace OnlineBookShop
 
         private void LogOutBtnC_Click(object sender, EventArgs e)
         {
+            // Create an instance of the Home form
+            Home HomeForm = new Home();
 
+            // Show the Home form
+            HomeForm.Show();
+
+            // Hide the current Contact form
+            this.Hide();
         }
     }
 }
