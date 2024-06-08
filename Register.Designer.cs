@@ -1,6 +1,6 @@
 ﻿namespace OnlineBookShop
 {
-    partial class Login
+    partial class Register
     {
         /// <summary>
         /// Required designer variable.
@@ -30,16 +30,15 @@
         {
             SuspendLayout();
             // 
-            // Login
+            // Register
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSkyBlue;
             ClientSize = new Size(1280, 720);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Login";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Login";
+            Name = "Register";
+            Text = "Register";
             ResumeLayout(false);
         }
 
