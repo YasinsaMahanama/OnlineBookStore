@@ -29,17 +29,6 @@ namespace OnlineBookShop
             this.Hide();
         }
 
-        private void UserBtnI_Click(object sender, EventArgs e)
-        {
-            // Create an instance of the User form
-            User userForm = new User();
-
-            // Show the User form
-            userForm.Show();
-
-            // Hide the current In Stock form
-            this.Hide();
-        }
 
         private void InStockBtnI_Click(object sender, EventArgs e)
         {
@@ -48,18 +37,6 @@ namespace OnlineBookShop
 
             // Show the In Stock form
             inStockForm.Show();
-
-            // Hide the current In Stock form
-            this.Hide();
-        }
-
-        private void SaleBtnI_Click(object sender, EventArgs e)
-        {
-            // Create an instance of the DashBoard form
-            DashBoard dashBoardForm = new DashBoard();
-
-            // Show the DashBoard form
-            dashBoardForm.Show();
 
             // Hide the current In Stock form
             this.Hide();
@@ -92,10 +69,10 @@ namespace OnlineBookShop
         private void HomeBtnB_Click(object sender, EventArgs e)
         {
             // Create an instance of the Home form
-            Home HomeForm = new Home();
+            Home homeForm = new Home();
 
             // Show the Home form
-            HomeForm.Show();
+            homeForm.Show();
 
             // Hide the current In Stock form
             this.Hide();
@@ -104,12 +81,24 @@ namespace OnlineBookShop
         private void LogOutBtnI_Click(object sender, EventArgs e)
         {
             // Create an instance of the Home form
-            Home HomeForm = new Home();
+            Home homeForm = new Home();
 
             // Show the Home form
-            HomeForm.Show();
+            homeForm.Show();
 
             // Hide the current In Stock form
+            this.Hide();
+        }
+
+        private void DashBoardBtn_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the DashBoard form
+            DashBoard dashBoardForm = new DashBoard();
+
+            // Show the DashBoard form
+            dashBoardForm.Show();
+
+            // Hide the current InStock form
             this.Hide();
         }
     }

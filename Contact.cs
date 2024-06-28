@@ -29,17 +29,6 @@ namespace OnlineBookShop
             this.Hide();
         }
 
-        private void UserBtnC_Click(object sender, EventArgs e)
-        {
-            // Create an instance of the User form
-            User userForm = new User();
-
-            // Show the User form
-            userForm.Show();
-
-            // Hide the current Contact form
-            this.Hide();
-        }
 
         private void InStockBtnC_Click(object sender, EventArgs e)
         {
@@ -53,17 +42,6 @@ namespace OnlineBookShop
             this.Hide();
         }
 
-        private void SaleBtnC_Click(object sender, EventArgs e)
-        {
-            // Create an instance of the Sale form
-            DashBoard saleForm = new DashBoard();
-
-            // Show the Sale form
-            saleForm.Show();
-
-            // Hide the current Contact form
-            this.Hide();
-        }
 
         private void AboutBtnC_Click(object sender, EventArgs e)
         {
@@ -92,10 +70,10 @@ namespace OnlineBookShop
         private void HomeBtnC_Click(object sender, EventArgs e)
         {
             // Create an instance of the Home form
-            Home HomeForm = new Home();
+            Home homeForm = new Home();
 
             // Show the Home form
-            HomeForm.Show();
+            homeForm.Show();
 
             // Hide the current Contact form
             this.Hide();
@@ -104,10 +82,22 @@ namespace OnlineBookShop
         private void LogOutBtnC_Click(object sender, EventArgs e)
         {
             // Create an instance of the Home form
-            Home HomeForm = new Home();
+            Home homeForm = new Home();
 
             // Show the Home form
-            HomeForm.Show();
+            homeForm.Show();
+
+            // Hide the current Contact form
+            this.Hide();
+        }
+
+        private void DashBoardBtn_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the DashBoard form
+            DashBoard dashBoardForm = new DashBoard();
+
+            // Show the DashBoard form
+            dashBoardForm.Show();
 
             // Hide the current Contact form
             this.Hide();

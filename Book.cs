@@ -34,17 +34,6 @@ namespace OnlineBookShop
             this.Hide();
         }
 
-        private void UserBtnB_Click(object sender, EventArgs e)
-        {
-            // Create an instance of the User form
-            User userForm = new User();
-
-            // Show the User form
-            userForm.Show();
-
-            // Hide the current Book form
-            this.Hide();
-        }
 
         private void InStockBtnB_Click(object sender, EventArgs e)
         {
@@ -58,17 +47,6 @@ namespace OnlineBookShop
             this.Hide();
         }
 
-        private void SaleBtnB_Click(object sender, EventArgs e)
-        {
-            // Create an instance of the DashBoard form
-            DashBoard DashBoardForm = new DashBoard();
-
-            // Show the DashBoard form
-            DashBoardForm.Show();
-
-            // Hide the current Book form
-            this.Hide();
-        }
 
         private void AboutBtnB_Click(object sender, EventArgs e)
         {
@@ -97,10 +75,10 @@ namespace OnlineBookShop
         private void HomeBtnB_Click(object sender, EventArgs e)
         {
             // Create an instance of the Contact form
-            Home HomeForm = new Home();
+            Home homeForm = new Home();
 
             // Show the Home form
-            HomeForm.Show();
+            homeForm.Show();
 
             // Hide the current Book form
             this.Hide();
@@ -109,12 +87,24 @@ namespace OnlineBookShop
         private void LogOutBtnB_Click(object sender, EventArgs e)
         {
             // Create an instance of the Contact form
-            Home HomeForm = new Home();
+            Home homeForm = new Home();
 
             // Show the Home form
-            HomeForm.Show();
+            homeForm.Show();
 
             // Hide the current Book form
+            this.Hide();
+        }
+
+        private void DashBoardBtn_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the DashBoard form
+            DashBoard dashBoardForm = new DashBoard();
+
+            // Show the DashBoard form
+            dashBoardForm.Show();
+
+            // Hide the current Books form
             this.Hide();
         }
     }
