@@ -199,7 +199,7 @@
             BookBtn.BackColor = Color.Teal;
             BookBtn.FlatStyle = FlatStyle.Popup;
             BookBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BookBtn.Location = new Point(45, 3);
+            BookBtn.Location = new Point(317, 3);
             BookBtn.Name = "BookBtn";
             BookBtn.Size = new Size(141, 44);
             BookBtn.TabIndex = 8;
@@ -212,7 +212,7 @@
             SaleBtn.BackColor = Color.Teal;
             SaleBtn.FlatStyle = FlatStyle.Popup;
             SaleBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SaleBtn.Location = new Point(309, 3);
+            SaleBtn.Location = new Point(45, 3);
             SaleBtn.Name = "SaleBtn";
             SaleBtn.Size = new Size(150, 44);
             SaleBtn.TabIndex = 0;
