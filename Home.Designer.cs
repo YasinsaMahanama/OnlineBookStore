@@ -40,7 +40,6 @@
             panel3 = new Panel();
             ContactBtn = new Button();
             AboutBtn = new Button();
-            UserBtn = new Button();
             InStockBtn = new Button();
             BookBtn = new Button();
             SaleBtn = new Button();
@@ -148,7 +147,6 @@
             panel3.BackColor = Color.White;
             panel3.Controls.Add(ContactBtn);
             panel3.Controls.Add(AboutBtn);
-            panel3.Controls.Add(UserBtn);
             panel3.Controls.Add(InStockBtn);
             panel3.Controls.Add(BookBtn);
             panel3.Controls.Add(SaleBtn);
@@ -175,7 +173,7 @@
             AboutBtn.BackColor = Color.Teal;
             AboutBtn.FlatStyle = FlatStyle.Popup;
             AboutBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            AboutBtn.Location = new Point(888, 3);
+            AboutBtn.Location = new Point(840, 3);
             AboutBtn.Name = "AboutBtn";
             AboutBtn.Size = new Size(141, 44);
             AboutBtn.TabIndex = 11;
@@ -183,25 +181,12 @@
             AboutBtn.UseVisualStyleBackColor = false;
             AboutBtn.Click += AboutBtn_Click;
             // 
-            // UserBtn
-            // 
-            UserBtn.BackColor = Color.Teal;
-            UserBtn.FlatStyle = FlatStyle.Popup;
-            UserBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            UserBtn.Location = new Point(253, 3);
-            UserBtn.Name = "UserBtn";
-            UserBtn.Size = new Size(141, 44);
-            UserBtn.TabIndex = 10;
-            UserBtn.Text = "USERS";
-            UserBtn.UseVisualStyleBackColor = false;
-            UserBtn.Click += UserBtn_Click;
-            // 
             // InStockBtn
             // 
             InStockBtn.BackColor = Color.Teal;
             InStockBtn.FlatStyle = FlatStyle.Popup;
             InStockBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            InStockBtn.Location = new Point(464, 3);
+            InStockBtn.Location = new Point(581, 3);
             InStockBtn.Name = "InStockBtn";
             InStockBtn.Size = new Size(141, 44);
             InStockBtn.TabIndex = 9;
@@ -214,7 +199,7 @@
             BookBtn.BackColor = Color.Teal;
             BookBtn.FlatStyle = FlatStyle.Popup;
             BookBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BookBtn.Location = new Point(45, 3);
+            BookBtn.Location = new Point(317, 3);
             BookBtn.Name = "BookBtn";
             BookBtn.Size = new Size(141, 44);
             BookBtn.TabIndex = 8;
@@ -227,11 +212,11 @@
             SaleBtn.BackColor = Color.Teal;
             SaleBtn.FlatStyle = FlatStyle.Popup;
             SaleBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SaleBtn.Location = new Point(675, 3);
+            SaleBtn.Location = new Point(45, 3);
             SaleBtn.Name = "SaleBtn";
             SaleBtn.Size = new Size(150, 44);
             SaleBtn.TabIndex = 0;
-            SaleBtn.Text = "SALE";
+            SaleBtn.Text = "DASHBOARD";
             SaleBtn.UseVisualStyleBackColor = false;
             SaleBtn.Click += SaleBtn_Click;
             // 
@@ -360,7 +345,6 @@
         private Button SaleBtn;
         private Button ContactBtn;
         private Button AboutBtn;
-        private Button UserBtn;
         private Button InStockBtn;
         private PictureBox pictureBox3;
         private Panel panel4;

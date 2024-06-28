@@ -39,7 +39,6 @@
             label9 = new Label();
             ContactBtnC = new Button();
             SaleBtnC = new Button();
-            UserBtnC = new Button();
             BookBtnC = new Button();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -80,7 +79,6 @@
             panel1.Controls.Add(label9);
             panel1.Controls.Add(ContactBtnC);
             panel1.Controls.Add(SaleBtnC);
-            panel1.Controls.Add(UserBtnC);
             panel1.Controls.Add(BookBtnC);
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
@@ -92,9 +90,9 @@
             HomeBtnC.BackColor = SystemColors.ControlDarkDark;
             HomeBtnC.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             HomeBtnC.ForeColor = Color.Black;
-            HomeBtnC.Location = new Point(59, 136);
+            HomeBtnC.Location = new Point(49, 136);
             HomeBtnC.Name = "HomeBtnC";
-            HomeBtnC.Size = new Size(193, 45);
+            HomeBtnC.Size = new Size(215, 45);
             HomeBtnC.TabIndex = 23;
             HomeBtnC.Text = "HOME";
             HomeBtnC.UseVisualStyleBackColor = false;
@@ -105,9 +103,9 @@
             InStockBtnC.BackColor = SystemColors.ControlDarkDark;
             InStockBtnC.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             InStockBtnC.ForeColor = Color.Black;
-            InStockBtnC.Location = new Point(59, 375);
+            InStockBtnC.Location = new Point(49, 423);
             InStockBtnC.Name = "InStockBtnC";
-            InStockBtnC.Size = new Size(193, 45);
+            InStockBtnC.Size = new Size(215, 45);
             InStockBtnC.TabIndex = 20;
             InStockBtnC.Text = "IN STOCK";
             InStockBtnC.UseVisualStyleBackColor = false;
@@ -118,9 +116,9 @@
             AboutBtnC.BackColor = SystemColors.ControlDarkDark;
             AboutBtnC.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             AboutBtnC.ForeColor = Color.Black;
-            AboutBtnC.Location = new Point(59, 538);
+            AboutBtnC.Location = new Point(49, 518);
             AboutBtnC.Name = "AboutBtnC";
-            AboutBtnC.Size = new Size(193, 45);
+            AboutBtnC.Size = new Size(215, 45);
             AboutBtnC.TabIndex = 19;
             AboutBtnC.Text = "ABOUT";
             AboutBtnC.UseVisualStyleBackColor = false;
@@ -156,9 +154,9 @@
             ContactBtnC.FlatStyle = FlatStyle.Popup;
             ContactBtnC.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ContactBtnC.ForeColor = Color.Black;
-            ContactBtnC.Location = new Point(59, 618);
+            ContactBtnC.Location = new Point(49, 610);
             ContactBtnC.Name = "ContactBtnC";
-            ContactBtnC.Size = new Size(193, 45);
+            ContactBtnC.Size = new Size(215, 45);
             ContactBtnC.TabIndex = 17;
             ContactBtnC.Text = "CONTACT";
             ContactBtnC.UseVisualStyleBackColor = false;
@@ -169,35 +167,22 @@
             SaleBtnC.BackColor = SystemColors.ControlDarkDark;
             SaleBtnC.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SaleBtnC.ForeColor = Color.Black;
-            SaleBtnC.Location = new Point(59, 456);
+            SaleBtnC.Location = new Point(49, 230);
             SaleBtnC.Name = "SaleBtnC";
-            SaleBtnC.Size = new Size(193, 45);
+            SaleBtnC.Size = new Size(215, 45);
             SaleBtnC.TabIndex = 16;
-            SaleBtnC.Text = "SALE";
+            SaleBtnC.Text = "DASHBOARD";
             SaleBtnC.UseVisualStyleBackColor = false;
             SaleBtnC.Click += SaleBtnC_Click;
-            // 
-            // UserBtnC
-            // 
-            UserBtnC.BackColor = SystemColors.ControlDarkDark;
-            UserBtnC.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            UserBtnC.ForeColor = Color.Black;
-            UserBtnC.Location = new Point(59, 296);
-            UserBtnC.Name = "UserBtnC";
-            UserBtnC.Size = new Size(193, 45);
-            UserBtnC.TabIndex = 15;
-            UserBtnC.Text = "USERS";
-            UserBtnC.UseVisualStyleBackColor = false;
-            UserBtnC.Click += UserBtnC_Click;
             // 
             // BookBtnC
             // 
             BookBtnC.BackColor = SystemColors.ControlDarkDark;
             BookBtnC.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BookBtnC.ForeColor = Color.Black;
-            BookBtnC.Location = new Point(59, 214);
+            BookBtnC.Location = new Point(49, 325);
             BookBtnC.Name = "BookBtnC";
-            BookBtnC.Size = new Size(193, 45);
+            BookBtnC.Size = new Size(215, 45);
             BookBtnC.TabIndex = 14;
             BookBtnC.Text = "BOOKS";
             BookBtnC.UseVisualStyleBackColor = false;
@@ -232,7 +217,6 @@
         private Label label9;
         private Button ContactBtnC;
         private Button SaleBtnC;
-        private Button UserBtnC;
         private Button BookBtnC;
         private Button HomeBtnC;
         private Button LogOutBtnC;
