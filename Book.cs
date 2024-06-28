@@ -60,11 +60,11 @@ namespace OnlineBookShop
 
         private void SaleBtnB_Click(object sender, EventArgs e)
         {
-            // Create an instance of the Sale form
-            Sale saleForm = new Sale();
+            // Create an instance of the DashBoard form
+            DashBoard DashBoardForm = new DashBoard();
 
-            // Show the Sale form
-            saleForm.Show();
+            // Show the DashBoard form
+            DashBoardForm.Show();
 
             // Hide the current Book form
             this.Hide();
