@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InStock));
             panel1 = new Panel();
+            DashBoardBtn = new Button();
             HomeBtnB = new Button();
             InStockBtnI = new Button();
             AboutBtnI = new Button();
             pictureBox1 = new PictureBox();
             label9 = new Label();
             ContactBtnI = new Button();
-            SaleBtnI = new Button();
             BookBtnI = new Button();
             panel2 = new Panel();
             LogOutBtnI = new Button();
@@ -48,18 +48,30 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 0, 64);
+            panel1.Controls.Add(DashBoardBtn);
             panel1.Controls.Add(HomeBtnB);
             panel1.Controls.Add(InStockBtnI);
             panel1.Controls.Add(AboutBtnI);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label9);
             panel1.Controls.Add(ContactBtnI);
-            panel1.Controls.Add(SaleBtnI);
             panel1.Controls.Add(BookBtnI);
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(314, 696);
             panel1.TabIndex = 4;
+            // 
+            // DashBoardBtn
+            // 
+            DashBoardBtn.BackColor = SystemColors.ControlDarkDark;
+            DashBoardBtn.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            DashBoardBtn.Location = new Point(47, 230);
+            DashBoardBtn.Name = "DashBoardBtn";
+            DashBoardBtn.Size = new Size(216, 44);
+            DashBoardBtn.TabIndex = 25;
+            DashBoardBtn.Text = "DASHBOARD";
+            DashBoardBtn.UseVisualStyleBackColor = false;
+            DashBoardBtn.Click += DashBoardBtn_Click;
             // 
             // HomeBtnB
             // 
@@ -138,25 +150,12 @@
             ContactBtnI.UseVisualStyleBackColor = false;
             ContactBtnI.Click += ContactBtnI_Click;
             // 
-            // SaleBtnI
-            // 
-            SaleBtnI.BackColor = SystemColors.ControlDarkDark;
-            SaleBtnI.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SaleBtnI.ForeColor = Color.Black;
-            SaleBtnI.Location = new Point(47, 323);
-            SaleBtnI.Name = "SaleBtnI";
-            SaleBtnI.Size = new Size(215, 45);
-            SaleBtnI.TabIndex = 16;
-            SaleBtnI.Text = "DASHBOARD";
-            SaleBtnI.UseVisualStyleBackColor = false;
-            SaleBtnI.Click += SaleBtnI_Click;
-            // 
             // BookBtnI
             // 
             BookBtnI.BackColor = SystemColors.ControlDarkDark;
             BookBtnI.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BookBtnI.ForeColor = Color.Black;
-            BookBtnI.Location = new Point(47, 231);
+            BookBtnI.Location = new Point(47, 323);
             BookBtnI.Name = "BookBtnI";
             BookBtnI.Size = new Size(215, 45);
             BookBtnI.TabIndex = 14;
@@ -215,10 +214,10 @@
         private PictureBox pictureBox1;
         private Label label9;
         private Button ContactBtnI;
-        private Button SaleBtnI;
         private Button BookBtnI;
         private Panel panel2;
         private Button HomeBtnB;
         private Button LogOutBtnI;
+        private Button DashBoardBtn;
     }
 }

@@ -42,15 +42,14 @@
             AboutBtn = new Button();
             InStockBtn = new Button();
             BookBtn = new Button();
-            SaleBtn = new Button();
             pictureBox3 = new PictureBox();
             panel4 = new Panel();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
-            label1 = new Label();
             panel5 = new Panel();
+            DashBoardBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -145,11 +144,11 @@
             // panel3
             // 
             panel3.BackColor = Color.White;
+            panel3.Controls.Add(DashBoardBtn);
             panel3.Controls.Add(ContactBtn);
             panel3.Controls.Add(AboutBtn);
             panel3.Controls.Add(InStockBtn);
             panel3.Controls.Add(BookBtn);
-            panel3.Controls.Add(SaleBtn);
             panel3.Location = new Point(0, 162);
             panel3.Name = "panel3";
             panel3.Size = new Size(1280, 50);
@@ -199,26 +198,13 @@
             BookBtn.BackColor = Color.Teal;
             BookBtn.FlatStyle = FlatStyle.Popup;
             BookBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BookBtn.Location = new Point(317, 3);
+            BookBtn.Location = new Point(309, 3);
             BookBtn.Name = "BookBtn";
             BookBtn.Size = new Size(141, 44);
             BookBtn.TabIndex = 8;
             BookBtn.Text = "BOOKS";
             BookBtn.UseVisualStyleBackColor = false;
             BookBtn.Click += BookBtn_Click;
-            // 
-            // SaleBtn
-            // 
-            SaleBtn.BackColor = Color.Teal;
-            SaleBtn.FlatStyle = FlatStyle.Popup;
-            SaleBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SaleBtn.Location = new Point(45, 3);
-            SaleBtn.Name = "SaleBtn";
-            SaleBtn.Size = new Size(150, 44);
-            SaleBtn.TabIndex = 0;
-            SaleBtn.Text = "DASHBOARD";
-            SaleBtn.UseVisualStyleBackColor = false;
-            SaleBtn.Click += SaleBtn_Click;
             // 
             // pictureBox3
             // 
@@ -236,7 +222,6 @@
             panel4.Controls.Add(label4);
             panel4.Controls.Add(label3);
             panel4.Controls.Add(label2);
-            panel4.Controls.Add(label1);
             panel4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             panel4.Location = new Point(621, 234);
             panel4.Name = "panel4";
@@ -284,17 +269,6 @@
             label2.TabIndex = 2;
             label2.Text = "Join our community of book lovers and enjoy exclusive ";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 46.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(8, 21);
-            label1.Name = "label1";
-            label1.Size = new Size(606, 102);
-            label1.TabIndex = 1;
-            label1.Text = "NEW ARRIVALS";
-            label1.Click += label1_Click;
-            // 
             // panel5
             // 
             panel5.BackColor = Color.LightSkyBlue;
@@ -302,6 +276,19 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(1280, 29);
             panel5.TabIndex = 7;
+            // 
+            // DashBoardBtn
+            // 
+            DashBoardBtn.BackColor = Color.Teal;
+            DashBoardBtn.FlatStyle = FlatStyle.Popup;
+            DashBoardBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            DashBoardBtn.Location = new Point(45, 3);
+            DashBoardBtn.Name = "DashBoardBtn";
+            DashBoardBtn.Size = new Size(152, 44);
+            DashBoardBtn.TabIndex = 13;
+            DashBoardBtn.Text = "DASHBOARD";
+            DashBoardBtn.UseVisualStyleBackColor = false;
+            DashBoardBtn.Click += DashBoardBtn_Click;
             // 
             // Home
             // 
@@ -342,7 +329,6 @@
         private Button Login;
         private Panel panel3;
         private Button BookBtn;
-        private Button SaleBtn;
         private Button ContactBtn;
         private Button AboutBtn;
         private Button InStockBtn;
@@ -354,5 +340,6 @@
         private Label label2;
         private Label label5;
         private Panel panel5;
+        private Button DashBoardBtn;
     }
 }

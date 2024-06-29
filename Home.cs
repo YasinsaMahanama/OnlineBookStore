@@ -24,22 +24,7 @@ namespace OnlineBookShop
             this.Hide();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void SaleBtn_Click(object sender, EventArgs e)
-        {
-            // Create an instance of the Sale form
-            DashBoard saleForm = new DashBoard();
-
-            // Show the Sale form
-            saleForm.Show();
-
-            // Hide the current Home form
-            this.Hide();
-        }
 
         private void BookBtn_Click(object sender, EventArgs e)
         {
@@ -65,17 +50,6 @@ namespace OnlineBookShop
             this.Hide();
         }
 
-        private void UserBtn_Click(object sender, EventArgs e)
-        {
-            // Create an instance of the User form
-            User userForm = new User();
-
-            // Show the User form
-            userForm.Show();
-
-            // Hide the current Home form
-            this.Hide();
-        }
 
         private void AboutBtn_Click(object sender, EventArgs e)
         {
@@ -96,6 +70,18 @@ namespace OnlineBookShop
 
             // Show the About form
             contactForm.Show();
+
+            // Hide the current Home form
+            this.Hide();
+        }
+
+        private void DashBoardBtn_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the DashBoard form
+            DashBoard dashBoardForm = new DashBoard();
+
+            // Show the DashBoard form
+            dashBoardForm.Show();
 
             // Hide the current Home form
             this.Hide();
