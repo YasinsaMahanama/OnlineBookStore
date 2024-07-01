@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace OnlineBookShop
 {
     public partial class Book : Form
@@ -16,6 +17,21 @@ namespace OnlineBookShop
         public Book()
         {
             InitializeComponent();
+        }
+
+
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\YASINSA MAHANAMA\Documents\OnlineBookStoreDb.mdf;Integrated Security=True;Connect Timeout=30");
+
+        private void PopulateBooks()
+        {
+            con.Open();
+            string query = "SELECT * FROM Books";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(adapter);
+            var ds = new DataSet();
+            adapter.Fill(ds);
+            BookList.DataSource = ds.Tables[0];
+            con.Close();
         }
 
         private void Deletebtn_Click(object sender, EventArgs e)
@@ -107,6 +123,30 @@ namespace OnlineBookShop
 
             // Hide the current Books form
             this.Hide();
+        }
+
+        private void Savebtn_Click(object sender, EventArgs e)
+        {
+            if (BTitleTb.Text == "" || BAuthorTb.Text == "" || QtyTb.Text == "" || PriceTb.Text == "" || BCatCb.SelectedIndex == -1)
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string query = "insert into Books values('" + BTitleTb.Text + "', '" + BAuthorTb.Text + "', '" + BCatCb.SelectedItem.ToString() + "','" + QtyTb.Text + "', '" + PriceTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Book save Successfully");
+                    con.Close();
+                }
+                catch (System.Data.SqlClient.SqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }

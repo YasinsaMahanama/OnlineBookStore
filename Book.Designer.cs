@@ -43,7 +43,7 @@
             label4 = new Label();
             Refreshbtn = new Button();
             CatCbAearch = new ComboBox();
-            dataGridView1 = new DataGridView();
+            BookList = new DataGridView();
             EditBtn = new Button();
             Deletebtn = new Button();
             ResetBtn = new Button();
@@ -63,7 +63,7 @@
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BookList).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -191,7 +191,7 @@
             panel2.Controls.Add(label4);
             panel2.Controls.Add(Refreshbtn);
             panel2.Controls.Add(CatCbAearch);
-            panel2.Controls.Add(dataGridView1);
+            panel2.Controls.Add(BookList);
             panel2.Controls.Add(EditBtn);
             panel2.Controls.Add(Deletebtn);
             panel2.Controls.Add(ResetBtn);
@@ -262,15 +262,15 @@
             CatCbAearch.TabIndex = 30;
             CatCbAearch.Text = "Filter Category";
             // 
-            // dataGridView1
+            // BookList
             // 
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 396);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(927, 271);
-            dataGridView1.TabIndex = 28;
+            BookList.BackgroundColor = Color.White;
+            BookList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            BookList.Location = new Point(12, 396);
+            BookList.Name = "BookList";
+            BookList.RowHeadersWidth = 51;
+            BookList.Size = new Size(927, 271);
+            BookList.TabIndex = 28;
             // 
             // EditBtn
             // 
@@ -320,6 +320,7 @@
             Savebtn.TabIndex = 24;
             Savebtn.Text = "Save";
             Savebtn.UseVisualStyleBackColor = false;
+            Savebtn.Click += Savebtn_Click;
             // 
             // PriceTb
             // 
@@ -462,7 +463,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BookList).EndInit();
             ResumeLayout(false);
         }
 
@@ -478,7 +479,7 @@
         private Panel panel2;
         private Button Refreshbtn;
         private ComboBox CatCbAearch;
-        private DataGridView dataGridView1;
+        private DataGridView BookList;
         private Button EditBtn;
         private Button Deletebtn;
         private Button ResetBtn;
