@@ -148,5 +148,43 @@ namespace OnlineBookShop
                 }
             }
         }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (BTitleTb.Text == "" || BAuthorTb.Text == "" || QtyTb.Text == "" || PriceTb.Text == "" || BCatCb.SelectedIndex == -1)
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    // Assuming the BookId is a hidden column in the DataGridView and the first column in the DataGridView
+                    int bookId = Convert.ToInt32(BookList.SelectedRows[0].Cells[0].Value);
+                    string query = "UPDATE Books SET Title = @Title, Author = @Author, Category = @Category, Quantity = @Quantity, Price = @Price WHERE BookId = @BookId";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@Title", BTitleTb.Text);
+                    cmd.Parameters.AddWithValue("@Author", BAuthorTb.Text);
+                    cmd.Parameters.AddWithValue("@Category", BCatCb.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@Quantity", QtyTb.Text);
+                    cmd.Parameters.AddWithValue("@Price", PriceTb.Text);
+                    cmd.Parameters.AddWithValue("@BookId", bookId);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Book Updated Successfully");
+                    con.Close();
+                    PopulateBooks(); // Refresh the data grid after updating
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void BookList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

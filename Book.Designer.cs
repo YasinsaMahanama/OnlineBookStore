@@ -271,6 +271,7 @@
             BookList.RowHeadersWidth = 51;
             BookList.Size = new Size(927, 271);
             BookList.TabIndex = 28;
+            BookList.CellContentClick += BookList_CellContentClick;
             // 
             // EditBtn
             // 
@@ -283,6 +284,7 @@
             EditBtn.TabIndex = 27;
             EditBtn.Text = "Edit";
             EditBtn.UseVisualStyleBackColor = false;
+            EditBtn.Click += EditBtn_Click;
             // 
             // Deletebtn
             // 
