@@ -1,4 +1,4 @@
-﻿namespace OnlineBookShop
+namespace OnlineBookShop
 {
     partial class About
     {
