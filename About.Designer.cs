@@ -40,6 +40,8 @@ namespace OnlineBookShop
             ContactBtnA = new Button();
             BookBtnA = new Button();
             DashBoardBtn = new Button();
+            blueLabel = new Label(); // Add label declaration
+
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -48,6 +50,7 @@ namespace OnlineBookShop
             // panel2
             // 
             panel2.BackColor = Color.White;
+            panel2.Controls.Add(blueLabel); // Add the blue label to panel2
             panel2.Controls.Add(LogOutBtnA);
             panel2.Font = new Font("Garamond", 16.2F, FontStyle.Bold);
             panel2.ForeColor = Color.White;
@@ -55,6 +58,18 @@ namespace OnlineBookShop
             panel2.Name = "panel2";
             panel2.Size = new Size(948, 696);
             panel2.TabIndex = 9;
+            // 
+            // blueLabel
+            // 
+            blueLabel.BackColor = Color.Blue;
+            blueLabel.Location = new Point(0, 75);
+            blueLabel.Size = new Size(panel2.Width, 180); // Set height to 150 pixels (15 cm)
+            blueLabel.Name = "blueLabel";
+            blueLabel.Font = new Font("Segeo UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            blueLabel.Text = "\"we believe that books can change your life\"".ToUpper();
+            blueLabel.TabIndex = 35;
+            blueLabel.TextAlign = ContentAlignment.MiddleCenter;
+            blueLabel.Padding = new Padding(100, 20, 100, 60);
             // 
             // LogOutBtnA
             // 
@@ -204,10 +219,219 @@ namespace OnlineBookShop
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            //
+            // Container
+            //
+            container.BackColor = Color.White;
+            container.Location = new Point(234, 296);
+            container.Name = "panel2";
+            container.Size = new Size(500, 300);
+            container.TabIndex = 5;
+            panel2.Controls.Add(container);
+
+
+
+            next.BackColor = Color.Teal;
+            next.FlatStyle = FlatStyle.Popup;
+            next.Font = new Font("Segeo UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            next.ForeColor = Color.White;
+            next.Location = new Point(784, 431);
+            next.Name = "addtocard";
+            next.Size = new Size(120, 30);
+            next.TabIndex = 20;
+            next.Text = "Next";
+            next.Click += NextBtn_Click;
+            next.UseVisualStyleBackColor = false;
+            panel2.Controls.Add(next);
+
+
+            back.BackColor = Color.Teal;
+            back.FlatStyle = FlatStyle.Popup;
+            back.Font = new Font("Segeo UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            back.ForeColor = Color.White;
+            back.Location = new Point(60, 431);
+            back.Name = "addtocard";
+            back.Size = new Size(120, 30);
+            back.TabIndex = 20;
+            back.Text = "Back";
+            back.Click += BackBtn_Click;
+            back.UseVisualStyleBackColor = false;
+            panel2.Controls.Add(back);
+
+            string[,] members = {
+                {
+                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m1.jpg",
+                    "MAHANAMA M.N.H.T.J.Y.",
+                    "STORE MANAGER",
+                    ""
+                },
+                {
+                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m2.jpg",
+                    "KOSHILA HANSANEE",
+                    "ASSISTANT MANAGER",
+                    ""
+                },
+                {
+                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m3.jpg",
+                    "SHASHIKALA H.W.T.",
+                    "SALES ASSOCIATE ",
+                    ""
+                },
+                {
+                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m4.jpg",
+                    "SHAKITHTHIYAN P.",
+                     " CASHIER",
+                    ""
+                },
+                {
+                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m5.jpg",
+                    "CHATHURANGA B.K",
+                    "RECEIVING CLERK",
+                    ""
+                },
+                {
+                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m6.jpg",
+                    "RANSARA S.D.K",
+                    " MARKETING  SPECIALIST",
+                    ""
+                },
+               
+            };
+
+            panels = new List<Panel>();
+
+            for (int i = 0; i < 6; i++) {
+                MemberProfile memberProfile = new MemberProfile(members[i,0]);
+                memberProfile.setName(members[i,1]);
+                memberProfile.setProfession(members[i,2]);
+                memberProfile.setId(members[i,3]);
+                container.Controls.Add(memberProfile);
+                panels.Add(memberProfile);
+            }
+
+            switchMember(memberIndex);
+
+        }
+
+        private void NextBtn_Click(object sender, EventArgs e) {
+            if (memberIndex < MAX_MEMBERS) {
+                back.Enabled = true;
+                memberIndex++;
+                if (memberIndex == MAX_MEMBERS - 1) {
+                    next.Enabled = false;
+                }
+                switchMember(memberIndex);
+            }
+        }
+
+        private void BackBtn_Click(object sender, EventArgs e) {
+            if (memberIndex > 0) {
+                next.Enabled = true;
+                memberIndex--;
+                if (memberIndex == 0) {
+                    back.Enabled = false;
+                }
+                switchMember(memberIndex);
+            }
+        }
+
+        public void switchMember(int idx) {
+            foreach (Panel panel in panels) {
+                panel.Visible = false;
+            }
+            int i = 0;
+            foreach (Panel panel in panels) {
+                if (i == idx) {
+                    panel.Visible = true;
+                }
+                i++;
+            }
+        }
+
+        private class MemberProfile : Panel {
+            private PictureBox pictureBox;
+            private Label name;
+            private Label profession;
+            private Label id;
+            private String path;
+            public MemberProfile(String path) {
+                this.path = path;
+                this.Size = new Size(500, 300);
+                this.Name = "Profile";
+                this.TabIndex = 5;
+                this.BackColor = Color.White;
+                InitializeComponent();
+            }
+
+            private void InitializeComponent() {
+                pictureBox = new PictureBox();
+                name = new Label();
+                profession = new Label();
+                id = new Label();
+
+                pictureBox.Location = new Point(5, 10);
+                pictureBox.Size = new Size(this.Height - this.Height/5, this.Height);
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.BorderStyle = BorderStyle.Fixed3D; 
+                pictureBox.Image = Image.FromFile(path);
+
+                name.AutoSize = true;
+                name.Font = new Font("Segeo UI", 11.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+                name.ForeColor = Color.Black;
+                name.Location = new Point(this.Height-45,  90);
+                name.Name = "txt";
+                name.Size = new Size(125, 25);
+                name.TabIndex = 13;
+                name.Text = "Name";
+                name.TextAlign = ContentAlignment.TopCenter;
+
+                profession.AutoSize = true;
+                profession.Font = new Font("Segeo UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+                profession.ForeColor = Color.Black;
+                profession.Location = new Point(this.Height-35,  135);
+                profession.Name = "txt";
+                profession.Size = new Size(125, 25);
+                profession.TabIndex = 13;
+                profession.Text = "Profession";
+                profession.TextAlign = ContentAlignment.TopCenter;
+
+                id.AutoSize = true;
+                id.Font = new Font("Segeo UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+                id.ForeColor = Color.Black;
+                id.Location = new Point(this.Height,  160);
+                id.Name = "txt";
+                id.Size = new Size(125, 25);
+                id.TabIndex = 13;
+                id.Text = "ID";
+                id.TextAlign = ContentAlignment.TopCenter;
+
+                this.Controls.Add(pictureBox);
+                this.Controls.Add(name);
+                this.Controls.Add(profession);
+                this.Controls.Add(id);
+            }
+
+            public void setName(string name) {
+                this.name.Text = name;
+            }
+
+            public void setProfession(string pro) {
+                this.profession.Text = pro;
+            }
+
+            public void setId(string id) {
+                this.id.Text = id;
+            }
         }
 
         #endregion
 
+        private List<Panel> panels;
+        private Panel container = new Panel();
+        private Button next = new Button();
+        private Button back = new Button();
+        private int memberIndex = 0;
+        private const int MAX_MEMBERS = 6;
         private Panel panel2;
         private Panel panel1;
         private Button InStockBtnA;
@@ -219,5 +443,6 @@ namespace OnlineBookShop
         private Button HomeBtnA;
         private Button LogOutBtnA;
         private Button DashBoardBtn;
+        private Label blueLabel; // Declare label
     }
 }
