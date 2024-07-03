@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -68,7 +68,7 @@ namespace OnlineBookShop
 
         private void HomeBtnB_Click(object sender, EventArgs e)
         {
-            // Create an instance of the Home form
+            // Create an instance of the Home form 
             Home homeForm = new Home();
 
             // Show the Home form
