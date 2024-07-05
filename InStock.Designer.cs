@@ -382,17 +382,17 @@ namespace OnlineBookShop
                 this.Name = "itemcontainer";
                 this.Size = new Size(300, Height);
                 this.TabIndex = 5;
-                createComponents();
+                //createComponents();
             }
 
-            private void createComponents() {
+        /*    private void createComponents() {
                 try {
                     PictureBox pictureBox = new PictureBox();
                     pictureBox.Location = new Point(10, 10);
                     pictureBox.Size = new Size(this.Width - 20, this.Width - 20);
                     pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                     pictureBox.BorderStyle = BorderStyle.Fixed3D; 
-                    pictureBox.Image = Image.FromFile(path);
+   //                 pictureBox.Image = Image.FromFile(path);
 
                     author = new Label();
                     author.AutoSize = true;
@@ -447,18 +447,18 @@ namespace OnlineBookShop
                 } catch (NullReferenceException ex) {
                     Console.WriteLine(ex);
                 }
-            }
+            }*/
 
             public void setAuthor(string auth) {
-                this.author.Text = auth;
+    //            this.author.Text = auth;
             }
 
             public void setBookName(string name) {
-                this.bookName.Text = name;
+  //              this.bookName.Text = name;
             }
 
             public void setPrice(string price) {
-                this.price.Text = price;
+        //        this.price.Text = price;
             }
 
             private Label label;
