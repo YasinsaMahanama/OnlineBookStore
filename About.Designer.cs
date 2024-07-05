@@ -30,10 +30,8 @@ namespace OnlineBookShop
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
             panel2 = new Panel();
-            blueLabel = new Label();
             LogOutBtnA = new Button();
             panel1 = new Panel();
-            DashBoardBtn = new Button();
             HomeBtnA = new Button();
             InStockBtnA = new Button();
             AboutBtnA = new Button();
@@ -41,6 +39,9 @@ namespace OnlineBookShop
             label9 = new Label();
             ContactBtnA = new Button();
             BookBtnA = new Button();
+            DashBoardBtn = new Button();
+            blueLabel = new Label(); // Add label declaration
+
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -49,7 +50,7 @@ namespace OnlineBookShop
             // panel2
             // 
             panel2.BackColor = Color.White;
-            panel2.Controls.Add(blueLabel);
+            panel2.Controls.Add(blueLabel); // Add the blue label to panel2
             panel2.Controls.Add(LogOutBtnA);
             panel2.Font = new Font("Garamond", 16.2F, FontStyle.Bold);
             panel2.ForeColor = Color.White;
@@ -61,14 +62,14 @@ namespace OnlineBookShop
             // blueLabel
             // 
             blueLabel.BackColor = Color.Blue;
-            blueLabel.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            blueLabel.Location = new Point(124, 74);
+            blueLabel.Location = new Point(0, 75);
+            blueLabel.Size = new Size(panel2.Width, 180); // Set height to 150 pixels (15 cm)
             blueLabel.Name = "blueLabel";
-            blueLabel.Padding = new Padding(100, 20, 100, 60);
-            blueLabel.Size = new Size(200, 180);
+            blueLabel.Font = new Font("Segeo UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            blueLabel.Text = "\"we believe that books can change your life\"".ToUpper();
             blueLabel.TabIndex = 35;
-            blueLabel.Text = "\"WE BELIEVE THAT BOOKS CAN CHANGE YOUR LIFE\"";
             blueLabel.TextAlign = ContentAlignment.MiddleCenter;
+            blueLabel.Padding = new Padding(100, 20, 100, 60);
             // 
             // LogOutBtnA
             // 
@@ -98,18 +99,6 @@ namespace OnlineBookShop
             panel1.Name = "panel1";
             panel1.Size = new Size(314, 696);
             panel1.TabIndex = 8;
-            // 
-            // DashBoardBtn
-            // 
-            DashBoardBtn.BackColor = SystemColors.ControlDarkDark;
-            DashBoardBtn.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            DashBoardBtn.Location = new Point(47, 230);
-            DashBoardBtn.Name = "DashBoardBtn";
-            DashBoardBtn.Size = new Size(216, 44);
-            DashBoardBtn.TabIndex = 25;
-            DashBoardBtn.Text = "DASHBOARD";
-            DashBoardBtn.UseVisualStyleBackColor = false;
-            DashBoardBtn.Click += DashBoardBtn_Click;
             // 
             // HomeBtnA
             // 
@@ -201,6 +190,18 @@ namespace OnlineBookShop
             BookBtnA.UseVisualStyleBackColor = false;
             BookBtnA.Click += BookBtnA_Click;
             // 
+            // DashBoardBtn
+            // 
+            DashBoardBtn.BackColor = SystemColors.ControlDarkDark;
+            DashBoardBtn.Font = new Font("Garamond", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            DashBoardBtn.Location = new Point(47, 230);
+            DashBoardBtn.Name = "DashBoardBtn";
+            DashBoardBtn.Size = new Size(216, 44);
+            DashBoardBtn.TabIndex = 25;
+            DashBoardBtn.Text = "DASHBOARD";
+            DashBoardBtn.UseVisualStyleBackColor = false;
+            DashBoardBtn.Click += DashBoardBtn_Click;
+            // 
             // About
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -218,6 +219,98 @@ namespace OnlineBookShop
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            //
+            // Container
+            //
+            container.BackColor = Color.White;
+            container.Location = new Point(234, 296);
+            container.Name = "panel2";
+            container.Size = new Size(500, 300);
+            container.TabIndex = 5;
+            panel2.Controls.Add(container);
+
+
+
+            next.BackColor = Color.Teal;
+            next.FlatStyle = FlatStyle.Popup;
+            next.Font = new Font("Segeo UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            next.ForeColor = Color.White;
+            next.Location = new Point(784, 431);
+            next.Name = "addtocard";
+            next.Size = new Size(120, 30);
+            next.TabIndex = 20;
+            next.Text = "Next";
+            next.Click += NextBtn_Click;
+            next.UseVisualStyleBackColor = false;
+            panel2.Controls.Add(next);
+
+
+            back.BackColor = Color.Teal;
+            back.FlatStyle = FlatStyle.Popup;
+            back.Font = new Font("Segeo UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            back.ForeColor = Color.White;
+            back.Location = new Point(60, 431);
+            back.Name = "addtocard";
+            back.Size = new Size(120, 30);
+            back.TabIndex = 20;
+            back.Text = "Back";
+            back.Click += BackBtn_Click;
+            back.UseVisualStyleBackColor = false;
+            panel2.Controls.Add(back);
+
+            string[,] members = {
+                {
+                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m1.jpg",
+                    "MAHANAMA M.N.H.T.J.Y.",
+                    "STORE MANAGER",
+                    ""
+                },
+                {
+                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m2.jpg",
+                    "KOSHILA HANSANEE",
+                    "ASSISTANT MANAGER",
+                    ""
+                },
+                {
+                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m3.jpg",
+                    "SHASHIKALA H.W.T.",
+                    "SALES ASSOCIATE ",
+                    ""
+                },
+                {
+                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m4.jpg",
+                    "SHAKITHTHIYAN P.",
+                     " CASHIER",
+                    ""
+                },
+                {
+                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m5.jpg",
+                    "CHATHURANGA B.K",
+                    "RECEIVING CLERK",
+                    ""
+                },
+                {
+                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m6.jpg",
+                    "RANSARA S.D.K",
+                    " MARKETING  SPECIALIST",
+                    ""
+                },
+               
+            };
+
+            panels = new List<Panel>();
+
+            for (int i = 0; i < 6; i++) {
+                MemberProfile memberProfile = new MemberProfile(members[i,0]);
+                memberProfile.setName(members[i,1]);
+                memberProfile.setProfession(members[i,2]);
+                memberProfile.setId(members[i,3]);
+                container.Controls.Add(memberProfile);
+                panels.Add(memberProfile);
+            }
+
+            switchMember(memberIndex);
+
         }
 
         private void NextBtn_Click(object sender, EventArgs e) {
