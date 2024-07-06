@@ -2,6 +2,7 @@ namespace OnlineBookShop
 {
     partial class About
     {
+        private string[,] members;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -258,53 +259,14 @@ namespace OnlineBookShop
             back.UseVisualStyleBackColor = false;
             panel2.Controls.Add(back);
 
-            string[,] members = {
-                {
-                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m1.jpg",
-                    "MAHANAMA M.N.H.T.J.Y.",
-                    "STORE MANAGER",
-                    ""
-                },
-                {
-                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m2.jpg",
-                    "KOSHILA HANSANEE",
-                    "ASSISTANT MANAGER",
-                    ""
-                },
-                {
-                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m3.jpg",
-                    "SHASHIKALA H.W.T.",
-                    "SALES ASSOCIATE ",
-                    ""
-                },
-                {
-                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m4.jpg",
-                    "SHAKITHTHIYAN P.",
-                     " CASHIER",
-                    ""
-                },
-                {
-                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m5.jpg",
-                    "CHATHURANGA B.K",
-                    "RECEIVING CLERK",
-                    ""
-                },
-                {
-                    "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\m6.jpg",
-                    "RANSARA S.D.K",
-                    " MARKETING  SPECIALIST",
-                    ""
-                },
-               
-            };
+            members = Database.getMembers();
 
             panels = new List<Panel>();
 
-            for (int i = 0; i < 6; i++) {
-                MemberProfile memberProfile = new MemberProfile(members[i,0]);
-                memberProfile.setName(members[i,1]);
-                memberProfile.setProfession(members[i,2]);
-                memberProfile.setId(members[i,3]);
+            for (int i = 0; i < Database.getMemberCount(); i++) {
+                MemberProfile memberProfile = new MemberProfile(Database.getImage(members[i, 2]));
+                memberProfile.setName(members[i,0]);
+                memberProfile.setProfession(members[i,1]);
                 container.Controls.Add(memberProfile);
                 panels.Add(memberProfile);
             }
@@ -352,7 +314,6 @@ namespace OnlineBookShop
             private PictureBox pictureBox;
             private Label name;
             private Label profession;
-            private Label id;
             private String path;
             public MemberProfile(String path) {
                 this.path = path;
@@ -367,7 +328,6 @@ namespace OnlineBookShop
                 pictureBox = new PictureBox();
                 name = new Label();
                 profession = new Label();
-                id = new Label();
 
                 pictureBox.Location = new Point(5, 10);
                 pictureBox.Size = new Size(this.Height - this.Height/5, this.Height);
@@ -395,20 +355,9 @@ namespace OnlineBookShop
                 profession.Text = "Profession";
                 profession.TextAlign = ContentAlignment.TopCenter;
 
-                id.AutoSize = true;
-                id.Font = new Font("Segeo UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-                id.ForeColor = Color.Black;
-                id.Location = new Point(this.Height,  160);
-                id.Name = "txt";
-                id.Size = new Size(125, 25);
-                id.TabIndex = 13;
-                id.Text = "ID";
-                id.TextAlign = ContentAlignment.TopCenter;
-
                 this.Controls.Add(pictureBox);
                 this.Controls.Add(name);
                 this.Controls.Add(profession);
-                this.Controls.Add(id);
             }
 
             public void setName(string name) {
@@ -419,9 +368,6 @@ namespace OnlineBookShop
                 this.profession.Text = pro;
             }
 
-            public void setId(string id) {
-                this.id.Text = id;
-            }
         }
 
         #endregion
