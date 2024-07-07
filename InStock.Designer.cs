@@ -1,3 +1,5 @@
+using Org.BouncyCastle.Crypto.Generators;
+using System.Configuration;
 using System.Drawing.Text;
 
 namespace OnlineBookShop
@@ -6,6 +8,7 @@ namespace OnlineBookShop
     {
         private System.ComponentModel.IContainer components = null;
         public static System.ComponentModel.ComponentResourceManager resources;
+        public static string[,] data;
 
         protected override void Dispose(bool disposing)
         {
@@ -290,44 +293,31 @@ namespace OnlineBookShop
             flowLayoutPanel.Dock = DockStyle.Fill; 
             flowLayoutPanel.Location = new Point(10, 100);
 
-            string[] images = {
-                "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\1.png",
-                "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\2.png",
-                "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\3.png",
-                "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\4.png",
-                "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\5.png",
-                "D:\\2 year 2 ns semister 2024\\visual programming\\OnlineBookStore-main\\Images\\6.png",
-            };
+            data = Database.getBooks();
+          
+            container.Controls.Add(flowLayoutPanel);
+            int count = 0;
+            for (int i = 0; i < Database.getBookCount(); i++)
+            {
+                ItemContainer itemContainer = new ItemContainer(Database.getImage(data[i, 3]));
+                itemContainer.setBookName(data[i, 0]);
+                itemContainer.setAuthor(data[i, 1]);
+                itemContainer.setPrice(data[i, 2]);
+                itemContainer.setStock(data[i, 4]);
 
-            string[,] items_info = {
-                {"Think Like a Monk", "Jay Shetty", "Rs. 2,690"},
-                {"Rich Dad Poor Dad", "Robert T.Kiyosaki", "Rs. 2,990.00"},
-                {"The Subtle Art of Not Giving a F*ck", "Mark Menson", "Rs. 2,790.00"},
-                {"The 5 AM Club", "Robin Sharma", "Rs. 1,990.00"},
-                {"The Richest Man in Babylon", "George S.Glason", "Rs. 990.00"},
-                {"Death", "Sadhguru", "Rs. 1,590.00"}
-            };
-
-            for (int i = 0; i < 6; i++) {
-                ItemContainer itemContainer = new ItemContainer(images[i]);
-                itemContainer.setBookName(items_info[i,0]);
-                itemContainer.setAuthor(items_info[i,1]);
-                itemContainer.setPrice(items_info[i,2]);
                 flowLayoutPanel.Controls.Add(itemContainer);
 
-                if (i > 3) {
-                    int div = (int)Math.Ceiling((double)i / 3);
-                    container.Height = div * ItemContainer.Height + 10;
+                if (i > 3)
+                {
+                    container.Height = ItemContainer.Height * (int)Math.Ceiling((double)i/3) + 10;
                 }
             }
 
-            container.Controls.Add(flowLayoutPanel);
-                
             void SearchButton_Click(object sender, EventArgs e) {
                 string query = searchTextBox.Text;
                 // Implement search functionality
                 MessageBox.Show($"Searching for: {query}");
-            }     
+            }
 
         }
 
@@ -371,10 +361,11 @@ namespace OnlineBookShop
         }
 
         private class ItemContainer : Panel {
-            public static int Height = 430;
+            public static int Height = 450;
             private String path;
             private Label author;
             private Label bookName;
+            private Label stock;
             private Label price;
             public ItemContainer(String path) {
                 this.path = path;
@@ -416,11 +407,22 @@ namespace OnlineBookShop
                     bookName.Text = "Book Shop";
                     bookName.TextAlign = ContentAlignment.TopCenter;
 
+                    stock = new Label();
+                    stock.AutoSize = true;
+                    stock.Font = new Font("Segeo UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+                    stock.ForeColor = Color.Black;
+                    stock.Location = new Point(10, this.Width + 60);
+                    stock.Name = "txt";
+                    stock.Size = new Size(125, 25);
+                    stock.TabIndex = 13;
+                    stock.Text = "Book Shop";
+                    stock.TextAlign = ContentAlignment.TopCenter;
+
                     price = new Label();
                     price.AutoSize = true;
                     price.Font = new Font("Segeo UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
                     price.ForeColor = Color.Black;
-                    price.Location = new Point(10, this.Width + 60);
+                    price.Location = new Point(10, this.Width + 90);
                     price.Name = "txt";
                     price.Size = new Size(125, 25);
                     price.TabIndex = 13;
@@ -432,7 +434,7 @@ namespace OnlineBookShop
                     addtocard.FlatStyle = FlatStyle.Popup;
                     addtocard.Font = new Font("Segeo UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
                     addtocard.ForeColor = Color.White;
-                    addtocard.Location = new Point(10, this.Width + 90);
+                    addtocard.Location = new Point(10, this.Width + 120);
                     addtocard.Name = "addtocard";
                     addtocard.Size = new Size(this.Width - 20, 30);
                     addtocard.TabIndex = 20;
@@ -442,6 +444,7 @@ namespace OnlineBookShop
                     this.Controls.Add(pictureBox);
                     this.Controls.Add(author);
                     this.Controls.Add(bookName);
+                    this.Controls.Add(stock);
                     this.Controls.Add(price);
                     this.Controls.Add(addtocard);
                 } catch (NullReferenceException ex) {
@@ -458,10 +461,13 @@ namespace OnlineBookShop
             }
 
             public void setPrice(string price) {
-                this.price.Text = price;
+                this.price.Text = price + ".00 LKR";
             }
 
-            private Label label;
+            public void setStock(string stock)
+            {
+                this.stock.Text = "Available In Stock : " + stock;
+            }
         }
     }
 }
