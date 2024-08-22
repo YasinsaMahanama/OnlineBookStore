@@ -1,6 +1,6 @@
 ﻿namespace OnlineBookShop
 {
-    partial class Books
+    partial class Register
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Books";
+            SuspendLayout();
+            // 
+            // Register
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightSkyBlue;
+            ClientSize = new Size(1280, 720);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "Register";
+            Text = "Register";
+            ResumeLayout(false);
         }
 
         #endregion
