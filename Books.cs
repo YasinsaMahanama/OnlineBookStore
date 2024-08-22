@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OnlineBookShop
 {
-    public partial class Register : Form
+    public partial class Books : Form
     {
-        public Register()
+        public Books()
         {
             InitializeComponent();
         }
