@@ -72,5 +72,10 @@ namespace OnlineBookShop
             // Hide the current Home form
             this.Hide();
         }
+
+        private void Login_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
