@@ -12,20 +12,6 @@ namespace OnlineBookShop
 
         }
 
-        private void Login_Click(object sender, EventArgs e)
-        {
-            // Create an instance of the Login form
-            Login loginForm = new Login();
-
-            // Show the Login form
-            loginForm.Show();
-
-            // Hide the current Home form
-            this.Hide();
-        }
-
-
-
         private void BookBtn_Click(object sender, EventArgs e)
         {
             // Create an instance of the Book form
