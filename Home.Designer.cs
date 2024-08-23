@@ -38,6 +38,7 @@
             button1 = new Button();
             textBox1 = new TextBox();
             panel3 = new Panel();
+            DashBoardBtn = new Button();
             ContactBtn = new Button();
             AboutBtn = new Button();
             InStockBtn = new Button();
@@ -49,7 +50,6 @@
             label3 = new Label();
             label2 = new Label();
             panel5 = new Panel();
-            DashBoardBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -154,6 +154,19 @@
             panel3.Size = new Size(1280, 50);
             panel3.TabIndex = 4;
             // 
+            // DashBoardBtn
+            // 
+            DashBoardBtn.BackColor = Color.Teal;
+            DashBoardBtn.FlatStyle = FlatStyle.Popup;
+            DashBoardBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            DashBoardBtn.Location = new Point(45, 3);
+            DashBoardBtn.Name = "DashBoardBtn";
+            DashBoardBtn.Size = new Size(152, 44);
+            DashBoardBtn.TabIndex = 13;
+            DashBoardBtn.Text = "DASHBOARD";
+            DashBoardBtn.UseVisualStyleBackColor = false;
+            DashBoardBtn.Click += DashBoardBtn_Click;
+            // 
             // ContactBtn
             // 
             ContactBtn.BackColor = Color.Teal;
@@ -227,6 +240,7 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(620, 451);
             panel4.TabIndex = 6;
+            panel4.Paint += panel4_Paint;
             // 
             // label5
             // 
@@ -276,19 +290,6 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(1280, 29);
             panel5.TabIndex = 7;
-            // 
-            // DashBoardBtn
-            // 
-            DashBoardBtn.BackColor = Color.Teal;
-            DashBoardBtn.FlatStyle = FlatStyle.Popup;
-            DashBoardBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            DashBoardBtn.Location = new Point(45, 3);
-            DashBoardBtn.Name = "DashBoardBtn";
-            DashBoardBtn.Size = new Size(152, 44);
-            DashBoardBtn.TabIndex = 13;
-            DashBoardBtn.Text = "DASHBOARD";
-            DashBoardBtn.UseVisualStyleBackColor = false;
-            DashBoardBtn.Click += DashBoardBtn_Click;
             // 
             // Home
             // 

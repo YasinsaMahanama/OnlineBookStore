@@ -186,5 +186,10 @@ namespace OnlineBookShop
         {
 
         }
+
+        private void BTitleTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

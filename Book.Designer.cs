@@ -423,6 +423,7 @@
             BTitleTb.Name = "BTitleTb";
             BTitleTb.Size = new Size(180, 38);
             BTitleTb.TabIndex = 8;
+            BTitleTb.TextChanged += BTitleTb_TextChanged;
             // 
             // label3
             // 

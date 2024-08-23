@@ -117,4 +117,53 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="student-girl-studying-with-laptop-young-woman-sitting-stack-books-getting-knowledge-online-illustration-e-learning-internet-course-school-concept_460582-51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\student-girl-studying-with-laptop-young-woman-sitting-stack-books-getting-knowledge-online-illustration-e-learning-internet-course-school-concept_460582-51.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="510" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\510.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="online-library-concept-showing-people-interacting-with-digital-books-reading-books-online-e-book-concept-read-digital-books-device-use-for-reading-flat-illustrat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\online-library-concept-showing-people-interacting-with-digital-books-reading-books-online-e-book-concept-read-digital-books-device-use-for-reading-flat-illustrat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="online-library-concept-showing-people-interacting-with-digital-books-reading-books-online-e-book-concept-read-digital-books-device-use-for-reading-flat-illustrat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\online-library-concept-showing-people-interacting-with-digital-books-reading-books-online-e-book-concept-read-digital-books-device-use-for-reading-flat-illustrat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1eec8d52cbdb60d1932df63b38a3f987" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\1eec8d52cbdb60d1932df63b38a3f987.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4202011emailgmaillogomailsocialsocialmedia-115677_115624" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\4202011emailgmaillogomailsocialsocialmedia-115677_115624.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cute-woman-read-book-cartoon-illustration_97231-2220" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\cute-woman-read-book-cartoon-illustration_97231-2220.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Twitter_icon-icons.com_66803" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Twitter_icon-icons.com_66803.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="360_F_104965579_I7QiErzc032ylXRaWt9XsmIcgzu3BaDJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\360_F_104965579_I7QiErzc032ylXRaWt9XsmIcgzu3BaDJ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="360_F_104965579_I7QiErzc032ylXRaWt9XsmIcgzu3BaDJ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\360_F_104965579_I7QiErzc032ylXRaWt9XsmIcgzu3BaDJ1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="360_F_471645030_nlJLtBf88pxHCy9qFCMG6VhrtXkJ0Abq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\360_F_471645030_nlJLtBf88pxHCy9qFCMG6VhrtXkJ0Abq.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="facebook_logo_icon_147291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\facebook_logo_icon_147291.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="124207249-marketing-des-médias-sociaux-concept-de-réseau-de-communication-icônes-aléatoires-balises-de" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\124207249-marketing-des-médias-sociaux-concept-de-réseau-de-communication-icônes-aléatoires-balises-de.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="295db05185d1dc2fa04dbd7f2d75126c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\295db05185d1dc2fa04dbd7f2d75126c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whatsapp_37229" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Whatsapp_37229.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="360_F_104965579_I7QiErzc032ylXRaWt9XsmIcgzu3BaDJ2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\360_F_104965579_I7QiErzc032ylXRaWt9XsmIcgzu3BaDJ2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -102,5 +102,10 @@ namespace OnlineBookShop
             // Hide the current DashBoard form
             this.Hide();
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
